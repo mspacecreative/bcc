@@ -8,9 +8,6 @@
 	background-color: #fff;
 	position: relative;
 }
-.wrapper.open {
-	transition: 0.4s ease-in-out;
-}
 p, ul, ol {
 	line-height: 1.5em;
 }
@@ -265,8 +262,13 @@ body .hamburger.scroll {
 		left: auto;
 		right: -250px;
 	}
+	.wrapper {
+		right: 0;
+		transition: 0.4s ease-in-out;
+	}
 	.wrapper.open {
 		right: -250px;
+		transition: 0.4s ease-in-out;
 	}
 	.placeholder-bg-img {
 		min-height: 200px;
@@ -277,6 +279,9 @@ body .hamburger.scroll {
 		background-color: #fff;
 		z-index: 999;
 		transition: 0.4s ease-in-out;
+	}
+	.jumbotron, .branding-container {
+		right: 0;
 	}
 	.jumbotron.open, .branding-container.open {
 		right: -250px;
