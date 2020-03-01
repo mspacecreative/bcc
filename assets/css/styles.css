@@ -685,7 +685,7 @@ body {
 		padding: 50px 0;
 	}
 	
-	.content-wrapper .carousel ul.slick-dots {
+	.home .content-wrapper .carousel ul.slick-dots {
 		padding-bottom: 50px;
 	}
 	
@@ -731,7 +731,7 @@ body {
 		margin-top: 0;
 	}
 	
-	.content-wrapper .carousel ul.slick-dots {
+	.home .content-wrapper .carousel ul.slick-dots {
 		padding-bottom: 50px;
 	}
 	
