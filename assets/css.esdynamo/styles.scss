@@ -10,6 +10,8 @@ $brandblue: #3F5BA9;
 $brandlightblue: #6CCEEF;
 $brandorange: #F58258;
 $lightgrey: #f5f5f5;
+$brandultralightblue: #cef3ff;
+$brandultralightorange: #ffe4da;
 
 img {
 	max-width: 100%;
@@ -65,6 +67,18 @@ footer {
 	font-weight: bold;
 }
 
+.ultra_light_blue_bg {
+	background-color: $brandultralightblue;
+}
+
+.dark_grey_bg {
+	background-color: $darkgrey;
+}
+
+.ultra_light_orange_bg {
+	background-color: $brandultralightorange;
+}
+
 .button:after, .button.light:after {
 	position: absolute;
 	top: 17px;
@@ -85,8 +99,8 @@ footer {
 	background-image: url(../img/icons/arrow-right.svg);
 }
 
-.button.light:after {
-	background-image: url(../img/icons/white-arrow-right.svg);
+.light .button:after {
+	background-image: url(../img/icons/arrow-right-white.svg);
 }
 
 .button:hover:after {
@@ -221,8 +235,12 @@ h3 {
 	color: $brandblue;
 }
 
-.carousel .slick-dots li.slick-active button:before, a {
+.carousel .slick-dots li.slick-active button:before {
 	color: $brandorange;
+}
+
+a {
+	color: $brandlightblue;
 }
 
 .carousel.who_we_are {

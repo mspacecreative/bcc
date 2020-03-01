@@ -58,6 +58,18 @@ footer {
 	font-weight: bold;
 }
 
+.ultra_light_blue_bg {
+	background-color: #cef3ff;
+}
+
+.dark_grey_bg {
+	background-color: #666;
+}
+
+.ultra_light_orange_bg {
+	background-color: #ffe4da;
+}
+
 .button:after, .button.light:after {
 	position: absolute;
 	top: 17px;
@@ -78,8 +90,8 @@ footer {
 	background-image: url(../img/icons/arrow-right.svg);
 }
 
-.button.light:after {
-	background-image: url(../img/icons/white-arrow-right.svg);
+.light .button:after {
+	background-image: url(../img/icons/arrow-right-white.svg);
 }
 
 .button:hover:after {
@@ -202,8 +214,12 @@ h3 {
 	color: #3F5BA9;
 }
 
-.carousel .slick-dots li.slick-active button:before, a {
+.carousel .slick-dots li.slick-active button:before {
 	color: #F58258;
+}
+
+a {
+	color: #6CCEEF;
 }
 
 .carousel.who_we_are {
