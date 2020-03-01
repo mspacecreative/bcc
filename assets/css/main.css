@@ -177,8 +177,8 @@ h2 {
 }
 
 .carousel .slick-next, .carousel .slick-prev {
-	height: 54px;
-	width: 25px;
+	height: 34px;
+    width: 15px;
 }
 
 .carousel .slick-next {
