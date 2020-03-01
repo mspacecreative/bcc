@@ -266,7 +266,7 @@ body .hamburger.scroll {
 		right: -250px;
 	}
 	.wrapper.open {
-		transform: translateX(-250px);
+		right: -250px;
 	}
 	.placeholder-bg-img {
 		min-height: 200px;
@@ -279,7 +279,7 @@ body .hamburger.scroll {
 		transition: 0.4s ease-in-out;
 	}
 	.jumbotron.open, .branding-container.open {
-		transform: translateX(-250px);
+		right: -250px;
 		transition: 0.4s ease-in-out;
 	}
 	.content-wrapper {
