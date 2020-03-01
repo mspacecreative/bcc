@@ -282,6 +282,7 @@ body .hamburger.scroll {
 	}
 	.jumbotron, .branding-container {
 		right: 0;
+		left: auto;
 	}
 	.jumbotron.open, .branding-container.open {
 		right: 250px;
