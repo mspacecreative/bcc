@@ -42,7 +42,7 @@ body a:focus {
 .navbar.open {
 	visibility: visible;
 	transition: 0.4s ease-in-out;
-	right: 0;
+	transform: translateX(0);
 }
 
 h2 {
@@ -260,9 +260,11 @@ body .hamburger.scroll {
 }
 @media (max-width: 980px) {
 	.navbar {
-		left: auto;
-		right: -250px;
+		transform: translateX(250px);
 		visibility: hidden;
+		transition: 0.4s ease-in-out;
+		left: auto;
+		right: 0;
 	}
 	.wrapper.open {
 		transform: translateX(-250px);
