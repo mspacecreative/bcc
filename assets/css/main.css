@@ -216,7 +216,8 @@ h2 {
 	-webkit-tap-highlight-color: transparent;
 }
 .mobile-nav-button.open {
-	transform: translateX(-250px);
+	right: 250px;
+	transition: 0.4s ease-in-out;
 }
 .hamburger {
 	outline: none;
