@@ -10,7 +10,7 @@ $(document).scroll(function() {
 // ABSOLUTE IMG HEIGHT CALC
 function absoluteImgHeight() {
 	if (window.matchMedia("(min-width: 981px)").matches) {
-		$('.absolute_img').each(function() {
+		$('.absolute_img, .absolute_img_right').each(function() {
 			$(this).css({
 			'height' : $(this).parent().height(),
 			'width' : 'auto'
@@ -54,6 +54,14 @@ $('.toggle-children').click(function() {
 $('.mobile-nav-button').click(function() {
 	$('.mobile-nav-button, .wrapper, .navbar, .jumbotron, .branding-container').toggleClass('open');
 	$(this).children('.hamburger').toggleClass('is-active');
+});
+
+// DESKTOP MENU TOGGLE
+$('.desktop-menu-toggle').click(function() {
+	$('body').toggleClass('hide');
+	$(this).children('.hamburger').toggleClass('is-active');
+	
+	$('.carousel')[0].slick.refresh();
 });
 
 // SMOOTH SCROLL TO ANCHORS
@@ -104,4 +112,6 @@ $(window).load(function() {
 $(window).resize(function() {
 	absoluteImgHeight();
 	splashHeight();
+	
+	$('.carousel').slick('resize');
 });
