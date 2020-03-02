@@ -216,7 +216,7 @@ h2 {
     display: table;
 	-webkit-tap-highlight-color: transparent;
 }
-.mobile-nav-button .hamburger {
+body .mobile-nav-button .hamburger {
 	display: table-cell;
     vertical-align: middle;
     height: 100%;
