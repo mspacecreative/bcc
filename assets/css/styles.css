@@ -708,6 +708,10 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	.carousel.slick-dotted.slick-slider {
 		margin-bottom: 0;
 	}
+	
+	.navbar {
+		overflow: auto;
+	}
 }
 
 @media (min-width: 981px) {
