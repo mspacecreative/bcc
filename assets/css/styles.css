@@ -620,6 +620,11 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	height: 2px;
 }
 
+.row.no-gutter-space {
+	margin-right: auto;
+	margin-left: auto;
+}
+
 @media (max-width: 980px) {
 	.logo {
 		max-width: 150px;
@@ -895,7 +900,7 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 }
 
 @media (min-width: 64em) {
-	.mobile-margin-bottom-25 {
+	.mobile-margin-bottom-md-25 {
 		margin-bottom: 25px;
 	}
 	
@@ -905,11 +910,6 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 }
 
 @media (min-width: 75em) {
-	.row.no-gutter-space {
-		margin-right: auto;
-		margin-left: auto;
-	}
-	
 	.gutter-space-1 {
 		margin-right: -1.5rem;
 		margin-left: -1.5rem;
