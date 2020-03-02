@@ -48,6 +48,7 @@ p:last-of-type {
 
 footer {
 	background-color: #3F5BA9;
+	border-top: 5px solid #F58258;
 }
 
 .icon {
@@ -378,6 +379,10 @@ a, a:hover {
 	transition: 0.4s ease-in-out;
 }
 
+.branding-container {
+	border-top: 10px solid #6CCEEF;
+}
+
 .hide .branding-container {
 	left: 0;
 	width: 100%;
@@ -406,7 +411,7 @@ a, a:hover {
 }*/
 
 .resources {
-	background-image: url(/assets/img/backgrounds/resources-gradient-bg.jpg);
+	/*background-image: url(/assets/img/backgrounds/resources-gradient-bg.jpg);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -553,7 +558,7 @@ body {
 }
 
 .blurb-overlay {
-	background-color: #ffe4da;
+	background-color: #cef3ff;
 }
 
 .slick-list p {
@@ -590,6 +595,7 @@ body {
 body .desktop-menu-toggle .hamburger {
 	position: absolute;
 	top: 50%;
+	padding: 13px 0;
 	transform: translate(-50%, -50%);
 	left: 50%;
 }
@@ -629,6 +635,10 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	.logo {
 		max-width: 150px;
 		padding: 15px 0;
+	}
+	
+	.col-inner {
+		padding: 2em;
 	}
 	
 	.desktop-menu-toggle {
@@ -713,6 +723,22 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 		object-fit: cover;
 	}
 	
+	.inner.top-bottom-padding-50, .top-bottom-padding-50 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	
+	.half_half_section {
+		min-height: 500px;
+	}
+	
+	.half_half_section .col-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+	
 	.absolute_img_right {
 		position: absolute;
 		top: 50%;
@@ -740,7 +766,8 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	
 	.two_third_img {
 		width: calc(100% - 16.666%);
-		max-height: 400px;
+		max-height: 500px;
+		min-height: 500px;
 		overflow: hidden;
 	}
 	
@@ -897,15 +924,24 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	.menu-logo.show {
 		max-height: 100px;
 	}
+	
+	.hide .navbar {
+		left: -500px;
+		transition: 0.4s ease-in-out;
+	}
+	
+	.hide .wrapper {
+		margin-left: 0;
+	}
+	
+	.desktop-menu-toggle {
+		left: 500px;
+	}
 }
 
 @media (min-width: 64em) {
 	.mobile-margin-bottom-md-25 {
 		margin-bottom: 25px;
-	}
-	
-	.col-inner {
-		padding: 2em;
 	}
 }
 

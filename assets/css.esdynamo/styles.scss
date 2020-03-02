@@ -57,6 +57,7 @@ p:last-of-type {
 
 footer {
 	background-color: $brandblue;
+	border-top: 5px solid $brandorange;
 }
 
 .icon {
@@ -398,6 +399,9 @@ a, a:hover {
 	left: -250px;
 	transition: 0.4s ease-in-out;
 }
+.branding-container {
+	border-top: 10px solid $brandlightblue;
+}
 .hide .branding-container {
 	left: 0;
 	width: 100%;
@@ -421,7 +425,7 @@ a, a:hover {
 	top: 0;
 }*/
 .resources {
-	background-image: url(/assets/img/backgrounds/resources-gradient-bg.jpg);
+	/*background-image: url(/assets/img/backgrounds/resources-gradient-bg.jpg);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -541,7 +545,7 @@ body {
 	position: relative;
 }
 .blurb-overlay {
-	background-color: $brandultralightorange;
+	background-color: $brandultralightblue;
 }
 .slick-list p {
 	margin: 0;
@@ -574,6 +578,7 @@ body {
 body .desktop-menu-toggle .hamburger {
 	position: absolute;
     top: 50%;
+	padding: 13px 0;
     transform: translate(-50%,-50%);
     left: 50%;
 }
@@ -605,6 +610,9 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	.logo {
 		max-width: 150px;
 		padding: 15px 0;
+	}
+	.col-inner {
+		padding: 2em;
 	}
 	.desktop-menu-toggle {
 		display: none;
@@ -674,6 +682,19 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 		min-width: 100%;
 		object-fit: cover;
 	}
+	.inner.top-bottom-padding-50, .top-bottom-padding-50 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.half_half_section {
+		min-height: 500px;
+	}
+	.half_half_section .col-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
 	.absolute_img_right {
 		position: absolute;
 	    top: 50%;
@@ -697,7 +718,8 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	}
 	.two_third_img {
 		width: calc(100% - 16.666%);
-		max-height: 400px;
+		max-height: 500px;
+		min-height: 500px;
 		overflow: hidden;
 	}
 	.blurb-overlay {
@@ -827,14 +849,21 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	.menu-logo.show {
 		max-height: 100px;
 	}
+	.hide .navbar {
+		left: -500px;
+		transition: 0.4s ease-in-out;
+	}
+	.hide .wrapper {
+		margin-left: 0;
+	}
+	.desktop-menu-toggle {
+		left: 500px;
+	}
 }
 
 @media (min-width: 64em) {
 	.mobile-margin-bottom-md-25 {
 		margin-bottom: 25px;
-	}
-	.col-inner {
-		padding: 2em;
 	}
 }
 
