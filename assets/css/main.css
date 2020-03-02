@@ -212,8 +212,14 @@ h2 {
 	padding: 0;
 	transition: 0.4s ease-in-out;
 	outline: none;
-	height: 20px;
+	height: 80px;
+    display: table;
 	-webkit-tap-highlight-color: transparent;
+}
+.mobile-nav-button .hamburger {
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
 }
 .mobile-nav-button.open {
 	right: calc(250px + 2em);

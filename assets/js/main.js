@@ -115,3 +115,8 @@ $(window).resize(function() {
 	
 	$('.carousel').slick('resize');
 });
+
+// CHANGE IN ORIENTATION
+$(window).on('orientationchange', function() {
+	$('.carousel').slick('resize');
+});
