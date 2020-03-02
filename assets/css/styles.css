@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h4 {
 	font-size: 1,15em;
+	line-height: 1.5em;
 }
 
 p:last-of-type {
@@ -342,7 +343,8 @@ a, a:hover {
 	position: absolute;
 	top: 50%;
 	left: calc(50% - 125px);
-	transform: translate(-50%, -50%);
+	margin-top: -15px;
+	margin-left: -15px;
 	font-size: 30px;
 }
 
@@ -636,12 +638,31 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	padding-bottom: 56.25%;
 }
 
-video {
+video, iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.content-wrapper ul.new_tab_list li {
+	text-indent: -19px;
+}
+
+.new_tab {
+	text-decoration: none;
+}
+
+.new_tab:after {
+	font-family: fontAwesome;
+	content: "\f08e";
+	padding-left: 10px;
+	color: #666;
+}
+
+.video-media h4 {
+	margin-top: 10px;
 }
 
 .row.no-gutter-space {
