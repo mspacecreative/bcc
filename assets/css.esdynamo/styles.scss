@@ -273,8 +273,6 @@ a {
     top: 0;
 }
 
-
-
 .menu-logo-container.show {
 	height: 60px;
 	width: 100%;
@@ -286,8 +284,8 @@ a {
 }
 
 .menu-logo {
-	min-height: 100%;
-	min-width: 100%;
+	max-width: none;
+	height: 100%;
 }
 
 .show ~ .nav {
