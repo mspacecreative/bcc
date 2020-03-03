@@ -812,6 +812,15 @@ video, iframe {
 		padding: 15px 0;
 	}
 	
+	.two_third_img, .full_img {
+		height: 400px;
+	}
+	
+	.blurb-overlay {
+		border-radius: 0 0 15px 15px;
+		max-width: 65%;
+	}
+	
 	.col-xs-12:last-of-type .new_tab_list:last-of-type {
 		margin-top: 0;
 	}
@@ -915,6 +924,10 @@ video, iframe {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+	
+	.two_third_img, .full_img {
+		height: 500px;
 	}
 	
 	.inner.top-bottom-padding-50, .top-bottom-padding-50 {
@@ -1067,6 +1080,10 @@ video, iframe {
 		transform: translate(0, -90%);
 	}
 	
+	.blurb-overlay {
+		width: 100%;
+	}
+	
 	.splash > .inner {
 		padding-bottom: 2em;
 	}
@@ -1123,6 +1140,10 @@ video, iframe {
 	.maxWidth1080 {
 		margin-left: auto;
 		margin-right: auto;
+	}
+	
+	.two_third_img, .full_img {
+		height: 600px;
 	}
 	
 	.inner {
