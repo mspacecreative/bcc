@@ -1,9 +1,9 @@
 $(document).scroll(function() {
 	var y = $(this).scrollTop();
 	if (y > 200) {
-		$('.menu-logo').addClass('show');
+		$('.menu-logo-container').addClass('show');
 	} else {
-		$('.menu-logo').removeClass('show');
+		$('.menu-logo-container').removeClass('show');
 	}
 });
 
