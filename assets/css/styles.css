@@ -1133,6 +1133,14 @@ video, iframe {
 		left: 500px;
 	}
 	
+	.menu-logo-container {
+		left: 217.5px;
+	}
+	
+	.menu-logo-container.show {
+		margin: 0 0 0 -217.5px;
+	}
+	
 	.wrapper, .jumbotron {
 		margin-left: 500px;
 	}
