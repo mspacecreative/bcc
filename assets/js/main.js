@@ -19,20 +19,31 @@ $(document).scroll(function() {
 	}
 }*/
 
+// TAGLINE TOP PADDING
+function taglineTopPadding() {
+	var headerHeight = $('.branding-container').height();
+	if (window.matchMedia("(min-width: 981px)").matches) {
+		$('.tagline, .clear-branding').css({
+			'padding-top' : headerHeight,
+		});
+	}
+}
+
 // SPLASH SECTION HEIGHT
 function splashHeight() {
 	var viewPortHeight = $(window).height(),
+	    halfViewPortHeight = $(window).height() / 3,
 	    mobileHeaderHeight = $('.branding-container').height();
 	if (window.matchMedia("(min-width: 1600px)").matches) {
-		$('.splash').css('min-height', 'none');
-	} else if (window.matchMedia("(min-height: 850px)").matches) {
-		$('.splash').css('min-height', 'none');
+		$('.splash, .splash > .inner').css('min-height', viewPortHeight);
+	} else if (window.matchMedia("(min-width: 768px) and (orientation: portrait)").matches) {
+		$('.splash, .splash > .inner').css('min-height', viewPortHeight - mobileHeaderHeight - halfViewPortHeight);
 	} else if (window.matchMedia("(min-width: 981px)").matches) {
-		$('.splash').css('min-height', viewPortHeight);
+		$('.splash, .splash > .inner').css('min-height', viewPortHeight);
 	} else if (window.matchMedia("(max-width: 850px) and (orientation: landscape)").matches) {
-		$('.splash').css('min-height', 'none');
+		$('.splash, .splash > .inner').css('min-height', 'none');
 	} else {
-		$('.splash').css('min-height', viewPortHeight - mobileHeaderHeight);
+		$('.splash, .splash > .inner').css('min-height', viewPortHeight - mobileHeaderHeight);
 	}
 }
 
@@ -95,12 +106,8 @@ $('.navbar a[href*=\\#]').click(function() {
 
 // WINDOW LOAD FUNCTIONS
 $(window).load(function() {
-	var headerHeight = $('.branding-container').height();
-	if (window.matchMedia("(min-width: 981px)").matches) {
-		$('.tagline, .clear-branding').css({
-			'margin-top' : headerHeight,
-		});
-	}
+	
+	taglineTopPadding();
 	
 	//absoluteImgHeight();
 	splashHeight();
@@ -110,6 +117,9 @@ $(window).load(function() {
 
 // WINDOW RESIZE FUNCTIONS
 $(window).resize(function() {
+	
+	taglineTopPadding();
+	
 	//absoluteImgHeight();
 	splashHeight();
 	
