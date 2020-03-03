@@ -806,6 +806,13 @@ video, iframe {
 	width: 100%;
 }
 
+.absolute_img {
+	max-width: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 @media (max-width: 980px) {
 	.logo {
 		max-width: 150px;
@@ -818,7 +825,6 @@ video, iframe {
 	
 	.blurb-overlay {
 		border-radius: 0 0 15px 15px;
-		max-width: 65%;
 	}
 	
 	.col-xs-12:last-of-type .new_tab_list:last-of-type {
@@ -919,13 +925,6 @@ video, iframe {
 }
 
 @media (min-width: 981px) {
-	.absolute_img {
-		max-width: none;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	
 	.two_third_img, .full_img {
 		height: 500px;
 	}
@@ -1073,6 +1072,10 @@ video, iframe {
 	.splash > .inner {
 		padding-bottom: 2em;
 	}
+	
+	.two_third_img, .full_img {
+		height: 300px;
+	}
 }
 
 @media (max-width: 450px) {
@@ -1080,8 +1083,8 @@ video, iframe {
 		transform: translate(0, -90%);
 	}
 	
-	.blurb-overlay {
-		width: 100%;
+	.two_third_img, .full_img {
+		height: 200px;
 	}
 	
 	.splash > .inner {
