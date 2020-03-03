@@ -916,7 +916,7 @@ video, iframe {
 	}
 	
 	.half_half_section {
-		height: 500px;
+		min-height: 500px;
 	}
 	
 	.extra-bottom-padding {
