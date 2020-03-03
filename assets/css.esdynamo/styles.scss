@@ -722,6 +722,11 @@ video, iframe {
 	padding: 2em;
 	border-radius: $borderradius;
 }
+.blurb-overlay-alt h3 {
+	color: $darkgrey;
+	font-size: 1.75em;
+	line-height: 1.5em;
+}
 @media (max-width: 980px) {
 	.logo {
 		max-width: 150px;
@@ -729,6 +734,9 @@ video, iframe {
 	}
 	.col-xs-12:last-of-type .new_tab_list:last-of-type {
 		margin-top: 0;
+	}
+	.blurb-overlay-alt h3 {
+	font-size: 1.25em;
 	}
 	.col-inner {
 		padding: 2em;
@@ -757,6 +765,10 @@ video, iframe {
 	.inner {
 		padding-right: 2em;
 		padding-left: 2em;
+	}
+	.inner.no-side-padding {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.mobile-margin-bottom-25 {
 		margin-bottom: 25px;
@@ -793,6 +805,16 @@ video, iframe {
 	}
 	.navbar {
 		overflow: auto;
+	}
+	.blurb-overlay-alt {
+		position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    width: 250px;
+	    padding: 100px 2em 1em 3em;
+		border-radius: 1000px 0 0 0;
+		background-color: #fff;
+		text-align: right;
 	}
 }
 
@@ -867,10 +889,15 @@ video, iframe {
 		padding: 2em;
 		border: 5px solid #fff;
 	}
-	.blurb-overlay-alt h3 {
-		color: $darkgrey;
-		font-size: 1.75em;
-		line-height: 1.5em;
+	.blurb-overlay-alt {
+		position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    width: 350px;
+	    padding: 150px 0 1em 3em;
+		border-radius: 1000px 0 0 0;
+		background-color: #fff;
+		text-align: right;
 	}
 	.tagline {
 		padding: 10% 0;
@@ -920,12 +947,7 @@ video, iframe {
 		margin-right: auto;
 	}
 	.blurb-overlay-alt {
-		position: relative;
-	    margin-top: -150px;
-	    background-color: #fff;
-	    width: 250px;
-	    border-radius: 0 1000px 0 0;
-	    padding: 100px 1.5em 2em 0;
+		padding-right: 0;
 	}
 }
 
@@ -935,12 +957,12 @@ video, iframe {
 		transform: translate(0, -90%);
 	}
 	.blurb-overlay-alt {
-		position: relative;
-	    margin-top: -100px;
-	    background-color: #fff;
-	    width: 50%;
-	    border-radius: 0 1000px 0 0;
-	    padding: 50px 20px 2em 0;
+		width: 150px;
+		padding: 50px 0 0 1em;
+	}
+	.blurb-overlay-alt h3 {
+		font-size: 0.75em;
+		line-height: 1.5em;
 	}
 	.slick-next, .slick-prev {
 		display: none!important;
@@ -1023,16 +1045,6 @@ video, iframe {
 
 @media (min-width: 1200px) {
 	
-	.blurb-overlay-alt {
-		position: absolute;
-	    right: 0;
-	    bottom: 0;
-	    width: 350px;
-	    padding: 150px 2em 1em 3em;
-		border-radius: 1000px 0 0 0;
-		background-color: #fff;
-		text-align: right;
-	}
 }
 
 @media (max-width: 63em) {
