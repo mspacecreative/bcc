@@ -325,6 +325,9 @@ $linkcolour: #E72F2C;
 	padding-top: 0;
 	padding-bottom: 0;
 }
+.inner_no_top_bottom_padding {
+	max-width: 1600px;
+}
 .no-side-padding {
 	padding-left: 0;
 	padding-right: 0;
@@ -1064,7 +1067,7 @@ video, iframe {
 		padding-left: 1.5rem;
 	}
 	.gutter-space-1 .col-lg-4, .gutter-space-1 .col-lg-6, .gutter-space-1 .col-md-6 {
-		padding-right: 1rem;
-		padding-left: 1rem;
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
 	}
 }
