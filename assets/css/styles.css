@@ -968,7 +968,6 @@ video, iframe {
 	.two_third_img, .full_img {
 		width: calc(100% - 16.666%);
 		max-height: 500px;
-		min-height: 500px;
 		overflow: hidden;
 	}
 	
