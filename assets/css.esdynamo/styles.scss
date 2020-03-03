@@ -1047,6 +1047,9 @@ video, iframe {
 		padding-right: 1rem;
 		padding-left: 1rem;
 	}
+	.video-media h4 {
+		margin-bottom: 0;
+	}
 }
 
 @media (min-width: 64em) and (max-width: 80rem) {
