@@ -459,6 +459,7 @@ body {
 .centered-title-with-line-rules h2 {
 	display: inline-block;
 	position: relative;
+	font-size: 1.75em;
 }
 .centered-title-with-line-rules.light h2 {
 	color: #fff;
@@ -476,6 +477,9 @@ body {
 	background-color: $darkgrey;
 	top: 50%;
 	content: '';
+}
+.light .centered-title-with-line-rules h2:before, .light .centered-title-with-line-rules h2:after {
+	background-color: #fff;
 }
 .centered-title-with-line-rules.light h2:before, .centered-title-with-line-rules.light h2:after {
 	background-color: #fff;
@@ -527,6 +531,9 @@ body {
 .two_third_one_third_overlay {
 	position: relative;
 }
+.translucent_white_bg {
+	background-color: rgba(255, 255, 255, .5);
+}
 .blurb-overlay h3 {
 	color: #fff;
 	font-weight: normal;
@@ -548,6 +555,7 @@ body {
 	content: "\f1c1";
 	font-family: fontAwesome;
 	color: $darkgrey;
+	transition: 0.25s ease-in-out;
 }
 .section {
 	position: relative;
@@ -616,6 +624,31 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	height: 0;
 	padding-bottom: 56.25%;
 }
+.top-rounded-corners {
+	border-radius: 15px;
+}
+.boxed-item {
+	display: inline-block;
+	padding: 15px;
+	margin-top: auto;
+	align-self: flex-start;
+	background-color: #fff;
+	box-shadow: 0 0 10px #d9d9d9;
+	border-radius: 5px;
+	transition: 0.25s ease-in-out;
+}
+.boxed-item:hover {
+	transition: 0.25s ease-in-out;
+	background-color: $brandorange;
+}
+.boxed-item:hover > a, .boxed-item:hover > a:before {
+	color: #fff;
+	transition: 0.25s ease-in-out;
+}
+.display-flex {
+	display: flex;
+	flex-direction: column;
+}
 video, iframe {
 	position: absolute;
 	top: 0;
@@ -645,6 +678,7 @@ video, iframe {
 	background-size: 60%;
 	background-position: center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 .video-placeholder > svg {
 	z-index: 2;
@@ -656,6 +690,7 @@ video, iframe {
 	left: 50%;
 	margin-left: -34px;
 	margin-top: -24px;
+	cursor: pointer;
 }
 .content-wrapper ul.new_tab_list li {
 	text-indent: -19px;
@@ -777,6 +812,9 @@ video, iframe {
 	.half_half_section {
 		min-height: 500px;
 	}
+	.extra-bottom-padding {
+		padding-bottom: 4em;
+	}
 	.half_half_section .col-inner {
 		display: flex;
 		flex-direction: column;
@@ -805,11 +843,17 @@ video, iframe {
 		padding-left: 4em;
 		padding-right: 4em;
 	}
-	.two_third_img {
+	.two_third_img, .full_img {
 		width: calc(100% - 16.666%);
 		max-height: 500px;
 		min-height: 500px;
 		overflow: hidden;
+	}
+	.two_third_img {
+		width: calc(100% - 16.666%);
+	}
+	.full_img {
+		width: 100%;
 	}
 	.blurb-overlay {
 		position: absolute;
@@ -819,6 +863,11 @@ video, iframe {
 		width: 33.33333333%;
 		padding: 2em;
 		border: 5px solid #fff;
+	}
+	.blurb-overlay-alt h3 {
+		color: $darkgrey;
+		font-size: 1.75em;
+		line-height: 1.5em;
 	}
 	.tagline {
 		padding: 10% 0;
@@ -867,12 +916,28 @@ video, iframe {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.blurb-overlay-alt {
+		position: relative;
+	    margin-top: -150px;
+	    background-color: #fff;
+	    width: 250px;
+	    border-radius: 0 1000px 0 0;
+	    padding: 100px 1.5em 2em 0;
+	}
 }
 
 @media (max-width: 450px) {
 
 	.slick-prev, .slick-next {
 		transform: translate(0, -90%);
+	}
+	.blurb-overlay-alt {
+		position: relative;
+	    margin-top: -100px;
+	    background-color: #fff;
+	    width: 50%;
+	    border-radius: 0 1000px 0 0;
+	    padding: 50px 20px 2em 0;
 	}
 	.slick-next, .slick-prev {
 		display: none!important;
@@ -953,6 +1018,20 @@ video, iframe {
 	}
 }
 
+@media (min-width: 1200px) {
+	
+	.blurb-overlay-alt {
+		position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    width: 350px;
+	    padding: 150px 2em 1em 3em;
+		border-radius: 1000px 0 0 0;
+		background-color: #fff;
+		text-align: right;
+	}
+}
+
 @media (max-width: 63em) {
 	.mobile-margin-bottom-md-25 {
 		margin-bottom: 25px;
@@ -961,7 +1040,7 @@ video, iframe {
 		margin-right: -1rem;
 		margin-left: -1rem;
 	}
-	.gutter-space-1 .col-lg-4 {
+	.gutter-space-1 .col-lg-4, .gutter-space-1 .col-lg-6, .gutter-space-1 .col-md-6 {
 		padding-right: 1rem;
 		padding-left: 1rem;
 	}
@@ -983,5 +1062,9 @@ video, iframe {
 	.gutter-space-1 .col-lg-4 {
 		padding-right: 1.5rem;
 		padding-left: 1.5rem;
+	}
+	.gutter-space-1 .col-lg-4, .gutter-space-1 .col-lg-6, .gutter-space-1 .col-md-6 {
+		padding-right: 1rem;
+		padding-left: 1rem;
 	}
 }
