@@ -1153,6 +1153,12 @@ video, iframe {
 	}
 }
 
+@media (max-width: 1200px) {
+	.responsive-inner {
+		padding: 2em;
+	}
+}
+
 @media (max-width: 63em) {
 	.mobile-margin-bottom-md-25 {
 		margin-bottom: 25px;
