@@ -273,6 +273,10 @@ a {
     top: 0;
 }
 
+.menu-logo-container a {
+	height: 100%;
+}
+
 .menu-logo-container.show {
 	height: 60px;
 	width: 100%;
@@ -284,7 +288,6 @@ a {
 }
 
 .menu-logo {
-	max-width: none;
 	height: 100%;
 }
 
