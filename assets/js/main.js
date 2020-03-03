@@ -8,7 +8,7 @@ $(document).scroll(function() {
 });
 
 // ABSOLUTE IMG HEIGHT CALC
-function absoluteImgHeight() {
+/*function absoluteImgHeight() {
 	if (window.matchMedia("(min-width: 981px)").matches) {
 		$('.absolute_img, .absolute_img_right').each(function() {
 			$(this).css({
@@ -17,7 +17,7 @@ function absoluteImgHeight() {
 			});
 		});
 	}
-}
+}*/
 
 // SPLASH SECTION HEIGHT
 function splashHeight() {
@@ -102,7 +102,7 @@ $(window).load(function() {
 		});
 	}
 	
-	absoluteImgHeight();
+	//absoluteImgHeight();
 	splashHeight();
 	
 	$('.loading-screen').fadeOut();
@@ -110,7 +110,7 @@ $(window).load(function() {
 
 // WINDOW RESIZE FUNCTIONS
 $(window).resize(function() {
-	absoluteImgHeight();
+	//absoluteImgHeight();
 	splashHeight();
 	
 	$('.carousel').slick('resize');
