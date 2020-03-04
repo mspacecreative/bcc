@@ -380,9 +380,15 @@ a, a:hover {
 .video-container-fixed {
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 250px;
 	height: 100%;
 	width: 100%;
+	transition: 0.4s ease-in-out;
+}
+
+.hide .video-container-fixed {
+	left: 0;
+	transition: 0.4s ease-in-out;
 }
 
 .video-container-fixed .video-container {
@@ -1210,7 +1216,7 @@ video, iframe {
 }
 
 @media (min-width: 1920px) {
-	.navbar:after, .loading-screen {
+	.navbar:after, .loading-screen, .video-container-fixed {
 		left: 500px;
 	}
 	

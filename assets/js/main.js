@@ -19,15 +19,6 @@ $(document).scroll(function() {
 	}
 }*/
 
-function videoPositionLeft() {
-	var navBarWidth = $('.navbar').outerWidth();
-	if ( $('.loading-screen').css('left') == '250px' ) {
-		$('.video-container-fixed').css('left', navBarWidth);
-	} else {
-		$('.video-container-fixed').css('left', 'auto');
-	}
-}
-
 $(document).ready(function() {
 	videoPositionLeft();
 	//adjustVideoHeight();
@@ -149,8 +140,6 @@ $(window).resize(function() {
 	taglineTopPadding();
 	
 	adjustVideoHeight();
-	
-	videoPositionLeft();
 	
 	//absoluteImgHeight();
 	splashHeight();
