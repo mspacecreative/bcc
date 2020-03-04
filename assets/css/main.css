@@ -218,7 +218,7 @@ h2 {
 body .mobile-nav-button .hamburger {
 	display: table-cell;
     vertical-align: middle;
-    height: 100%;
+    height: 80px;
 }
 .mobile-nav-button.open {
 	right: calc(250px + 2em);
