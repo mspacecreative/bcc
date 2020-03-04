@@ -22,9 +22,9 @@ $(document).scroll(function() {
 function videoPositionLeft() {
 	var navBarWidth = $('.navbar').outerWidth();
 	if ( $('.loading-screen').css('left') == '250px' ) {
-		$('.video-container-fixed > .video-container').css('left', navBarWidth);
+		$('.video-container-fixed').css('left', navBarWidth);
 	} else {
-		$('.video-container-fixed > .video-container').css('left', 'auto');
+		$('.video-container-fixed').css('left', 'auto');
 	}
 }
 
@@ -34,7 +34,6 @@ $(document).ready(function() {
 
 $('.video-container-fixed > .video-container').css('padding-bottom', $(window).height());
 var navBarWidth = $('.navbar').outerWidth();
-$('.video-container-fixed > .video-container').css('left', navBarWidth);
 
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
