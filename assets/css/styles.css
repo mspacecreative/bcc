@@ -922,6 +922,10 @@ video, iframe {
 		background-color: #fff;
 		text-align: right;
 	}
+	
+	.tagline h1 {
+		font-size: 2em;
+	}
 }
 
 @media (min-width: 981px) {
