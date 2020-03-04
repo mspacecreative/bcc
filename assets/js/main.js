@@ -20,7 +20,6 @@ $(document).scroll(function() {
 }*/
 
 $(document).ready(function() {
-	videoPositionLeft();
 	//adjustVideoHeight();
 });
 
@@ -28,6 +27,13 @@ $(document).ready(function() {
 	var splashContainerHeight = $('.splash').height();
 	$('.video-container-fixed .video-container').height(splashContainerHeight);
 }*/
+
+function staticSplashImgBg() {
+	$('.splash-static-container').css({
+	'height' : $(window).height(),
+
+	});
+}
 
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
@@ -128,6 +134,8 @@ $(window).load(function() {
 	taglineTopPadding();
 	//adjustVideoHeight();
 	
+	staticSplashImgBg();
+	
 	//absoluteImgHeight();
 	splashHeight();
 	
@@ -139,7 +147,7 @@ $(window).resize(function() {
 	
 	taglineTopPadding();
 	
-	adjustVideoHeight();
+	staticSplashImgBg();
 	
 	//absoluteImgHeight();
 	splashHeight();

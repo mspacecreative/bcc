@@ -402,15 +402,15 @@ a, a:hover {
 	margin: auto;
 	padding: 30px 0;
 }
-.video-container-fixed {
-	position: fixed;
+.splash-static-container {
+	position: absolute;
 	top: 0;
-	left: 250px;
-	height: 100%;
+	left: 0;
 	width: 100%;
 	transition: 0.4s ease-in-out;
 }
-.hide .video-container-fixed {
+
+.hide .splash-static-container {
 	left: 0;
 	transition: 0.4s ease-in-out;
 }
