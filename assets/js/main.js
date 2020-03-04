@@ -34,9 +34,7 @@ function splashHeight() {
 	var viewPortHeight = $(window).height(),
 	    thirdViewPortHeight = $(window).height() / 3,
 	    mobileHeaderHeight = $('.branding-container').height();
-	if (window.matchMedia("(max-height: 850px)").matches) {
-		$('.splash, .splash > .inner').css('min-height', viewPortHeight + thirdViewPortHeight);
-	} else if (window.matchMedia("(max-height: 1000px)").matches) {
+	if (window.matchMedia("(max-height: 1000px)").matches) {
 		$('.splash, .splash > .inner').css('min-height', viewPortHeight);
 	} else if (window.matchMedia("(min-height: 1001px)").matches) {
 		$('.splash, .splash > .inner').css('min-height', viewPortHeight - thirdViewPortHeight);
