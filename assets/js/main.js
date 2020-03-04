@@ -26,6 +26,10 @@ function taglineTopPadding() {
 		$('.tagline, .clear-branding').css({
 			'padding-top' : headerHeight,
 		});
+	} else {
+		$('.tagline, .clear-branding').css({
+			'padding-top' : 0,
+		});
 	}
 }
 
