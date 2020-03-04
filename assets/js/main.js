@@ -30,13 +30,13 @@ function videoPositionLeft() {
 
 $(document).ready(function() {
 	videoPositionLeft();
-	
-	adjustVideoHeight();
+	//adjustVideoHeight();
 });
 
-function adjustVideoHeight() {
-	$('.video-container-fixed > .video-container').css('padding-bottom', $(this).parent().next().outerHeight());
-}
+/*function adjustVideoHeight() {
+	var splashContainerHeight = $('.splash').height();
+	$('.video-container-fixed .video-container').height(splashContainerHeight);
+}*/
 
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
@@ -135,6 +135,7 @@ $('.navbar a[href*=\\#]').click(function() {
 $(window).load(function() {
 	
 	taglineTopPadding();
+	//adjustVideoHeight();
 	
 	//absoluteImgHeight();
 	splashHeight();
