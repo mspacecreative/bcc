@@ -32,8 +32,8 @@ $(document).ready(function() {
 	videoPositionLeft();
 });
 
-$('.video-container-fixed > .video-container').css('padding-bottom', $(window).height());
-var navBarWidth = $('.navbar').outerWidth();
+var splashTotalHeight = $('.spash').height();
+$('.video-container-fixed > .video-container').css('padding-bottom', splashTotalHeight);
 
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
