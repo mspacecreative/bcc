@@ -385,6 +385,11 @@ a, a:hover {
 	width: 100%;
 }
 
+.video-container-fixed .video-container {
+	padding-bottom: 0;
+	height: 100%;
+}
+
 .video-container-fixed video {
 	object-fit: cover;
 }
