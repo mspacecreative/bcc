@@ -305,6 +305,7 @@ a {
 
 .footer-bottom {
 	background-color: #fff;
+	position: relative;
 }
 
 .credits {
@@ -401,6 +402,17 @@ a, a:hover {
 	margin: auto;
 	padding: 30px 0;
 }
+.video-container-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.content-inner-wrapper {
+	background-color: #fff;
+	position: relative;
+}
 .light-overlay:before {
 	position: absolute;
 	width: 100%;
@@ -411,7 +423,7 @@ a, a:hover {
 	left: 0;
 }
 .splash {
-	background-image: url(/assets/img/backgrounds/bcc-baby-splash.jpg);
+	/*background-image: url(/assets/img/backgrounds/bcc-baby-splash.jpg);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
