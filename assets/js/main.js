@@ -30,10 +30,13 @@ function videoPositionLeft() {
 
 $(document).ready(function() {
 	videoPositionLeft();
+	
+	adjustVideoHeight();
 });
 
-var splashTotalHeight = $('.splash').height();
-$('.video-container-fixed > .video-container').css('padding-bottom', splashTotalHeight);
+function adjustVideoHeight() {
+	$('.video-container-fixed > .video-container').css('padding-bottom', $(this).parent().next().outerHeight());
+}
 
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
@@ -143,6 +146,8 @@ $(window).load(function() {
 $(window).resize(function() {
 	
 	taglineTopPadding();
+	
+	adjustVideoHeight();
 	
 	videoPositionLeft();
 	
