@@ -32,7 +32,7 @@ $(document).ready(function() {
 	videoPositionLeft();
 });
 
-var splashTotalHeight = $('.spash').height();
+var splashTotalHeight = $('.slpash').height();
 $('.video-container-fixed > .video-container').css('padding-bottom', splashTotalHeight);
 
 // TAGLINE TOP PADDING
