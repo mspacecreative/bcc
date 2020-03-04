@@ -996,7 +996,7 @@ video, iframe {
 		height: 200px;
 	}
 	.splash > .inner {
-		padding-bottom: 2em;
+		padding-bottom: 0;
 	}
 	.blurb-overlay-alt {
 		width: 150px;
@@ -1008,6 +1008,9 @@ video, iframe {
 	}
 	.slick-next, .slick-prev {
 		display: none!important;
+	}
+	.carousel {
+		padding: 0;
 	}
 	.carousel .slick-dots {
 		bottom: 20px;
