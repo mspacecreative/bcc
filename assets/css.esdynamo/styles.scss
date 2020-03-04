@@ -770,6 +770,10 @@ video, iframe {
 		max-width: 150px;
 		padding: 15px 0;
 	}
+	.inner_no_top_bottom_padding {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 	.two_third_img, .full_img {
 		height: 400px;
 	}
