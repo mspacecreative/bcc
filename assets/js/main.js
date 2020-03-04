@@ -19,6 +19,10 @@ $(document).scroll(function() {
 	}
 }*/
 
+$('.video-container-fixed > .video-container').css('padding-bottom', $(window).height());
+var navBarWidth = $('.navbar').outerWidth();
+$('.video-container-fixed > .video-container').css('left', navBarWidth);
+
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
 	var headerHeight = $('.branding-container').height();
