@@ -26,6 +26,10 @@ function taglineTopPadding() {
 		$('.tagline, .clear-branding').css({
 			'padding-top' : headerHeight,
 		});
+	} else if (window.matchMedia("(max-width: 850px) and (orientation: landscape)").matches) {
+		$('.tagline, .clear-branding').css({
+			'padding-top' : headerHeight,
+		});
 	} else {
 		$('.tagline, .clear-branding').css({
 			'padding-top' : 0,
