@@ -1,9 +1,9 @@
 $(document).scroll(function() {
 	var y = $(this).scrollTop();
 	if (y > 200) {
-		$('.menu-logo-container').addClass('show');
+		$('.menu-logo-container, .home .branding-container').addClass('show');
 	} else {
-		$('.menu-logo-container').removeClass('show');
+		$('.menu-logo-container, .home .branding-container').removeClass('show');
 	}
 });
 
@@ -60,12 +60,16 @@ function mobileSplashContainerHeight() {
 	        heightCalc = viewPortHeight - mobileHeaderHeight,
 	      splashHeight = $('.splash').height();
 	if (window.matchMedia("(max-width: 450px)").matches) {
-		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
-		$('.splash-static-container').css('top', mobileHeaderHeight);
-		$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
+		//$('.content-wrapper').css('padding-top', mobileHeaderHeight);
+		//$('.splash-static-container').css('top', mobileHeaderHeight);
+		$('.splash > .inner').height(viewPortHeight).css('padding-top', mobileHeaderHeight);
+		$('.splash-static-container, .splash').height(viewPortHeight);
 	} else if (window.matchMedia("(max-width: 980px) and (orientation: landscape)").matches) {
-		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
-		$('.splash-static-container').css('top', mobileHeaderHeight);
+		$('.splash > .inner').css({
+			'padding-top' : mobileHeaderHeight,
+			'height' : 'auto'
+		});
+		$('.splash-static-container, .splash').css('height', 'auto');
 	} else if (window.matchMedia("(max-width: 980px)").matches) {
 		$('.splash > .inner').outerHeight(splashHeight - mobileHeaderHeight).css({
 			'padding-bottom' : '0',

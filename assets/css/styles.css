@@ -858,6 +858,14 @@ video, iframe {
 		padding: 15px 0;
 	}
 	
+	.home .branding-container {
+		background-color: transparent;
+	}
+	
+	.home .branding-container.show {
+		background-color: #fff;
+	}
+	
 	.splash-static-container {
 		left: 0;
 	}

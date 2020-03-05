@@ -803,6 +803,12 @@ video, iframe {
 		max-width: 150px;
 		padding: 15px 0;
 	}
+	.home .branding-container {
+		background-color: transparent;
+	}
+	.home .branding-container.show {
+		background-color: #fff;
+	}
 	.splash-static-container {
 		left: 0;
 	}
@@ -1043,7 +1049,6 @@ video, iframe {
 @media (max-width: 1024px) {
 	
 	.content-wrapper .carousel ul.slick-dots {
-		margin-bottom: 50px;
 		position: relative;
 		top: 0;
 	}
@@ -1052,16 +1057,12 @@ video, iframe {
 		top: calc(50% - 27px);
 	}
 }
-
-/*@media (min-width: 1025px) {
+*@media (min-width: 1025px) {
 	
 	.carousel.slick-dotted.slick-slider {
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 	}
-	.carousel .slick-dots {
-		bottom: -35px;
-	}
-}*/
+}
 
 @media (max-width: 450px) {
 
@@ -1070,9 +1071,6 @@ video, iframe {
 	}
 	.two_third_img, .full_img {
 		height: 200px;
-	}
-	.splash > .inner {
-		padding-bottom: 0;
 	}
 	.blurb-overlay-alt {
 		width: 150px;
