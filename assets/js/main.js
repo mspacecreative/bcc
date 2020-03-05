@@ -132,15 +132,13 @@ $('a[href*=#]:not([href=#])').click(function() {
 // END SMOOTH SCROLL TO ANCHORS
 
 $('.navbar a[href*=\\#]').click(function() {
-	//if ( $('.resources-page').length ) {
-		$('body').addClass('clicked');
-		if ( $('body').hasClass('clicked') ) {
-			if (window.matchMedia("(max-width: 980px)").matches) {
-				$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
-				$('.hamburger').toggleClass('is-active');
-			}
+	$('body').toggleClass('clicked');
+	if ( $('body').hasClass('clicked') ) {
+		if (window.matchMedia("(max-width: 980px)").matches) {
+			$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
+			$('.hamburger').toggleClass('is-active');
 		}
-	//}
+	}
 });
 
 // WINDOW LOAD FUNCTIONS
