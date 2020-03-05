@@ -405,7 +405,6 @@ a, a:hover {
 .splash-static-container {
 	position: fixed;
 	top: 0;
-	left: 250px;
 	width: 100%;
 	transition: 0.4s ease-in-out;
 }
@@ -896,6 +895,9 @@ video, iframe {
 @media (min-width: 981px) {
 	.two_third_img, .full_img {
 		height: 500px;
+	}
+	.splash-static-container {
+		left: 250px;
 	}
 	.splash, .splash > .inner {
 		height: 100vh;
