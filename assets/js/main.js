@@ -66,16 +66,17 @@ function mobileSplashContainerHeight() {
 	} else if (window.matchMedia("(max-width: 980px) and (orientation: landscape)").matches) {
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
-		$('.splash-static-container, .splash, .splash > .inner').css('height', 'auto');
 	} else if (window.matchMedia("(max-width: 980px)").matches) {
-		$('.splash-static-container').css('margin-top', mobileHeaderHeight);
 		$('.splash > .inner').outerHeight(splashHeight - mobileHeaderHeight).css({
 			'padding-bottom' : '0',
-			'height' : splashHeight
 		});
+		$('.splash-static-container').css('top', mobileHeaderHeight);
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 	} else if (window.matchMedia("(min-width: 981px) and (max-width: 1024px)").matches) {
 		$('.splash-static-container, .splash, .splash > .inner').height(viewPortHeight);
+		$('.content-wrapper').css('padding-top', '0');
+		$('.splash-static-container').css('top', '0');
+	} else {
 		$('.content-wrapper').css('padding-top', '0');
 		$('.splash-static-container').css('top', '0');
 	}
@@ -155,7 +156,7 @@ $(window).load(function() {
 });
 
 // WINDOW RESIZE FUNCTIONS
-$(window).resize(function() {
+$(window).on('resize orientationchange', function() {
 	
 	taglineTopPadding();
 	
