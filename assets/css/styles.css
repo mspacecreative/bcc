@@ -757,10 +757,6 @@ video, iframe {
 	z-index: 1;
 }
 
-.splash, .splash > .inner {
-	height: calc(100vh - 80px);
-}
-
 .video-placeholder:after {
 	background-image: url(/assets/img/branding/bcc-branding.svg);
 	top: 0;
@@ -1156,7 +1152,6 @@ video, iframe {
 
 @media (max-width: 1024px) {
 	.content-wrapper .carousel ul.slick-dots {
-		margin-bottom: 50px;
 		position: relative;
 		top: 0;
 	}
@@ -1167,15 +1162,11 @@ video, iframe {
 	}
 }
 
-/*@media (min-width: 1025px) {
-	
+@media (min-width: 1025px) {
 	.carousel.slick-dotted.slick-slider {
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 	}
-	.carousel .slick-dots {
-		bottom: -35px;
-	}
-}*/
+}
 
 @media (max-width: 450px) {
 	.slick-prev, .slick-next {
@@ -1184,10 +1175,6 @@ video, iframe {
 	
 	.two_third_img, .full_img {
 		height: 200px;
-	}
-	
-	.splash > .inner {
-		padding-bottom: 0;
 	}
 	
 	.blurb-overlay-alt {
