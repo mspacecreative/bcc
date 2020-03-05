@@ -132,7 +132,7 @@ $('a[href*=#]:not([href=#])').click(function() {
 // END SMOOTH SCROLL TO ANCHORS
 
 $('.navbar a[href*=\\#]').click(function() {
-	if ( $('.resources-page').length ) {
+	//if ( $('.resources-page').length ) {
 		$('body').addClass('clicked');
 		if ( $('body').hasClass('clicked') ) {
 			if (window.matchMedia("(max-width: 980px)").matches) {
@@ -140,7 +140,7 @@ $('.navbar a[href*=\\#]').click(function() {
 				$('.hamburger').toggleClass('is-active');
 			}
 		}
-	}
+	//}
 });
 
 // WINDOW LOAD FUNCTIONS
