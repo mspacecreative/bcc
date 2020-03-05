@@ -295,9 +295,6 @@ body .hamburger.scroll {
 		right: 250px;
 		transition: 0.4s ease-in-out;
 	}
-	.content-wrapper {
-		margin-top: 73px;
-	}
 	.jumbotron .inner {
 		padding: 15px 0;
 	}

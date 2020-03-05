@@ -38,7 +38,7 @@ function staticSplashImgBg() {
 
 // TAGLINE TOP PADDING
 function taglineTopPadding() {
-	var headerHeight = $('.branding-container').height();
+	var headerHeight = $('.branding-container').outerHeight();
 	if (window.matchMedia("(min-width: 981px)").matches) {
 		$('.tagline, .clear-branding').css({
 			'padding-top' : headerHeight,
@@ -56,9 +56,13 @@ function taglineTopPadding() {
 
 function mobileSplashContainerHeight() {
 	var viewPortHeight = $(window).height(),
-	mobileHeaderHeight = $('.branding-container').height();
-	if (window.matchMedia("(max-width: 980px)").matches) {
+	mobileHeaderHeight = $('.branding-container').outerHeight();
+	if (window.matchMedia("(max-width: 450px)").matches) {
 		$('.splash-static-container, .splash').height(viewPortHeight - mobileHeaderHeight);
+		$('.content-wrapper').css('margin-top', mobileHeaderHeight);
+		$('.splash-static-container').css('top', mobileHeaderHeight);
+	} else if (window.matchMedia("(max-width: 980px)").matches) {
+		$('.content-wrapper').css('margin-top', mobileHeaderHeight);
 	}
 }
 
