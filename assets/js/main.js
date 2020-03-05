@@ -56,13 +56,14 @@ function taglineTopPadding() {
 
 function mobileSplashContainerHeight() {
 	var viewPortHeight = $(window).height(),
-	mobileHeaderHeight = $('.branding-container').outerHeight();
+	mobileHeaderHeight = $('.branding-container').outerHeight(),
+	        heightCalc = viewPortHeight - mobileHeaderHeight;
 	if (window.matchMedia("(max-width: 450px)").matches) {
-		$('.splash-static-container, .splash').height(viewPortHeight - mobileHeaderHeight);
-		$('.content-wrapper').css('margin-top', mobileHeaderHeight);
+		$('.splash-static-container, .splash').height(heightCalc);
+		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
 	} else if (window.matchMedia("(max-width: 980px)").matches) {
-		$('.content-wrapper').css('margin-top', mobileHeaderHeight);
+		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 	}
 }
 
