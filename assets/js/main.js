@@ -57,7 +57,8 @@ function taglineTopPadding() {
 function mobileSplashContainerHeight() {
 	var viewPortHeight = $(window).height(),
 	mobileHeaderHeight = $('.branding-container').outerHeight(),
-	        heightCalc = viewPortHeight - mobileHeaderHeight;
+	        heightCalc = viewPortHeight - mobileHeaderHeight,
+	      splashHeight = $('.splash').height();
 	if (window.matchMedia("(max-width: 450px)").matches) {
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
@@ -66,6 +67,12 @@ function mobileSplashContainerHeight() {
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
 		$('.splash-static-container, .splash, .splash > .inner').css('height', 'auto');
+	} else if (window.matchMedia("(max-width: 980px)").matches) {
+		$('.splash-static-container').css('margin-top', mobileHeaderHeight);
+		$('.splash > .inner').outerHeight(splashHeight - mobileHeaderHeight).css({
+			'padding-bottom' : '0',
+			'margin-top' : mobileHeaderHeight
+		});
 	} else if (window.matchMedia("(min-width: 981px) and (max-width: 1024px)").matches) {
 		$('.splash-static-container, .splash, .splash > .inner').height(viewPortHeight);
 		$('.content-wrapper').css('padding-top', '0');
