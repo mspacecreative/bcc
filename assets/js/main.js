@@ -58,12 +58,14 @@ function mobileSplashContainerHeight() {
 	var viewPortHeight = $(window).height(),
 	mobileHeaderHeight = $('.branding-container').outerHeight(),
 	        heightCalc = viewPortHeight - mobileHeaderHeight;
-	if (window.matchMedia("(max-width: 450px)").matches) {
-		$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
+	if (window.matchMedia("(max-device-width: 980px)").matches) {
+		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
-	} else if (window.matchMedia("(max-width: 980px)").matches) {
-		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
+	} else if (window.matchMedia("(min-device-width: 981px) and (max-device-width: 1023px)").matches) {
+		$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
+		$('.content-wrapper').css('padding-top', '0');
+		$('.splash-static-container').css('top', '0');
 	}
 }
 
