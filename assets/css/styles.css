@@ -966,6 +966,10 @@ video, iframe {
 	.tagline h1 {
 		font-size: 2em;
 	}
+	
+	.splash-static-container {
+		top: 80px;
+	}
 }
 
 @media (min-width: 981px) {

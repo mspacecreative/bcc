@@ -269,9 +269,6 @@ body .hamburger.scroll {
 		left: auto;
 		right: -250px;
 	}
-	.splash-static-container {
-		top: 80px;
-	}
 	.wrapper {
 		right: 0;
 		transition: 0.4s ease-in-out;
