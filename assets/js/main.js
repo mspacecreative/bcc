@@ -59,7 +59,7 @@ function mobileSplashContainerHeight() {
 	mobileHeaderHeight = $('.branding-container').outerHeight(),
 	        heightCalc = viewPortHeight - mobileHeaderHeight;
 	if (window.matchMedia("(max-width: 450px)").matches) {
-		$('.splash-static-container, .splash').height(heightCalc);
+		$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
 	} else if (window.matchMedia("(max-width: 980px)").matches) {
