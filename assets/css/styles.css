@@ -848,6 +848,10 @@ video, iframe {
 	object-fit: cover;
 }
 
+.tagline h1 {
+	margin-bottom: 0;
+}
+
 @media (max-width: 980px) {
 	.logo {
 		max-width: 150px;
