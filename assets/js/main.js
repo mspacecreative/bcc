@@ -60,8 +60,8 @@ function mobileSplashContainerHeight() {
 	        heightCalc = viewPortHeight - mobileHeaderHeight;
 	if (window.matchMedia("(max-width: 980px)").matches) {
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
-		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
+		$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
 	} else if (window.matchMedia("(min-width: 981px) and (max-width: 1024px)").matches) {
 		$('.splash-static-container, .splash, .splash > .inner').height(viewPortHeight);
 		$('.content-wrapper').css('padding-top', '0');
