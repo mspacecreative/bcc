@@ -62,8 +62,8 @@ function mobileSplashContainerHeight() {
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		$('.splash-static-container').css('top', mobileHeaderHeight);
-	} else if (window.matchMedia("(min-device-width: 981px) and (max-device-width: 1023px)").matches) {
-		$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
+	} else if (window.matchMedia("(min-device-width: 981px) and (max-device-width: 1024px)").matches) {
+		$('.splash-static-container, .splash, .splash > .inner').height(viewPortHeight);
 		$('.content-wrapper').css('padding-top', '0');
 		$('.splash-static-container').css('top', '0');
 	}

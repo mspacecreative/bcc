@@ -620,7 +620,7 @@ body {
 }
 .slick-list p {
 	margin: 0;
-	padding: 1em 0;
+	padding: 15px 0;
 }
 .desktop-menu-toggle {
 	height: 50px;
@@ -856,9 +856,6 @@ video, iframe {
 		bottom: auto;
 		padding-bottom: 50px;
 	}
-	.carousel .slick-list {
-		margin-bottom: 25px;
-	}
 	.branding-container {
 		position: fixed;
 		background-color: #fff;
@@ -1033,6 +1030,19 @@ video, iframe {
 	}
 }
 
+@media (max-width: 1024px) {
+	
+	.content-wrapper .carousel ul.slick-dots {
+		margin-bottom: 50px;
+		position: relative;
+		top: 0;
+	}
+	.slick-prev, .slick-next {
+		transform: none;
+		top: calc(50% - 27px);
+	}
+}
+
 @media (max-width: 450px) {
 
 	.slick-prev, .slick-next {
@@ -1070,9 +1080,6 @@ video, iframe {
 	ul:nth-of-type(2) {
 		margin-top: 0;
 	}
-	/*.home .content-wrapper .carousel ul.slick-dots {
-		padding-bottom: 50px;
-	}*/
 	.tagline h1 {
 		font-size: 1.5em;
 	}
