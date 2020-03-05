@@ -102,15 +102,17 @@ $('a[href*=#]:not([href=#])').click(function() {
 		}
     }
 });
+// END SMOOTH SCROLL TO ANCHORS
 
 $('.navbar a[href*=\\#]').click(function() {
-	$(this).parent().parent().parent().parent().toggleClass('open');
-	$(this).parent().parent().parent().parent().prev().toggleClass('open');
-	$(this).parent().parent().parent().parent().next().toggleClass('open');
-	$(this).parent().parent().parent().parent().prev().children('.hamburger').toggleClass('is-active');
-	$('.wrapper, .jumbotron').toggleClass('open');
+	if ( $('.resources-page').length ) {
+		$('body').addClass('clicked');
+		if ( $('body').hasClass('clicked') ) {
+			$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
+			$('.hamburger').toggleClass('is-active');
+		}
+	}
 });
-// END SMOOTH SCROLL TO ANCHORS
 
 // WINDOW LOAD FUNCTIONS
 $(window).load(function() {
