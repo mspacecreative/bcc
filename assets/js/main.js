@@ -122,7 +122,10 @@ $('.navbar a[href*=\\#]').click(function() {
 	if ( $('.resources-page').length ) {
 		$('body').addClass('clicked');
 		if ( $('body').hasClass('clicked') ) {
-			$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
+			if (window.matchMedia("(max-width: 980px)").matches) {
+				$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
+				$('.hamburger').toggleClass('is-active');
+			}
 		}
 	}
 });
