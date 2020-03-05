@@ -123,7 +123,6 @@ $('.navbar a[href*=\\#]').click(function() {
 		$('body').addClass('clicked');
 		if ( $('body').hasClass('clicked') ) {
 			$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
-			$('.hamburger').toggleClass('is-active');
 		}
 	}
 });
