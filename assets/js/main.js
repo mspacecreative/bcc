@@ -43,14 +43,6 @@ function taglineTopPadding() {
 		$('.tagline, .clear-branding').css({
 			'padding-top' : headerHeight,
 		});
-	} else if (window.matchMedia("(max-width: 850px) and (orientation: landscape)").matches) {
-		$('.tagline, .clear-branding').css({
-			'padding-top' : headerHeight,
-		});
-	} else {
-		$('.tagline, .clear-branding').css({
-			'padding-top' : 0,
-		});
 	}
 }
 
@@ -62,13 +54,10 @@ function mobileSplashContainerHeight() {
 	if (window.matchMedia("(max-width: 450px)").matches) {
 		//$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 		//$('.splash-static-container').css('top', mobileHeaderHeight);
-		$('.splash > .inner').height(viewPortHeight).css('padding-top', mobileHeaderHeight);
+		$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 		$('.splash-static-container, .splash').height(viewPortHeight);
 	} else if (window.matchMedia("(max-width: 980px) and (orientation: landscape)").matches) {
-		$('.splash > .inner').css({
-			'padding-top' : mobileHeaderHeight,
-			'height' : 'auto'
-		});
+		$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 		$('.splash-static-container, .splash').css('height', 'auto');
 	} else if (window.matchMedia("(max-width: 980px)").matches) {
 		$('.splash > .inner').outerHeight(splashHeight - mobileHeaderHeight).css({

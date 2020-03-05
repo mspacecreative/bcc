@@ -719,9 +719,6 @@ video, iframe {
 	background-color: $lightgrey;
 	z-index: 1;
 }
-.splash, .splash > .inner {
-	height: calc(100vh - 80px);
-}
 .video-placeholder:after {
 	background-image: url(/assets/img/branding/bcc-branding.svg);
 	top: 0;
@@ -1057,7 +1054,7 @@ video, iframe {
 		top: calc(50% - 27px);
 	}
 }
-*@media (min-width: 1025px) {
+@media (min-width: 1025px) {
 	
 	.carousel.slick-dotted.slick-slider {
 		margin-bottom: 50px;
