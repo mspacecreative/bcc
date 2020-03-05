@@ -403,9 +403,9 @@ a, a:hover {
 	padding: 30px 0;
 }
 .splash-static-container {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	left: 0;
+	left: 250px;
 	width: 100%;
 	transition: 0.4s ease-in-out;
 }
@@ -433,6 +433,7 @@ a, a:hover {
 	content: "";
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 .splash {
 	/*background-image: url(/assets/img/backgrounds/bcc-baby-splash.jpg);*/
@@ -441,12 +442,15 @@ a, a:hover {
 	position: relative;
 	background-repeat: no-repeat;
 	display: flex;
+	height: 100vh;
 }
 .splash > .inner {
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 4em;
 	padding-top: 0;
+	position: relative;
+	z-index: 2;
 }
 .navbar {
 	background-color: $lightgrey;
@@ -716,6 +720,9 @@ video, iframe {
 	background-color: $lightgrey;
 	z-index: 1;
 }
+.splash, .splash > .inner {
+	height: calc(100vh - 80px);
+}
 .video-placeholder:after {
 	background-image: url(/assets/img/branding/bcc-branding.svg);
 	top: 0;
@@ -890,6 +897,9 @@ video, iframe {
 	.two_third_img, .full_img {
 		height: 500px;
 	}
+	.splash, .splash > .inner {
+		height: 100vh;
+	}
 	.inner.top-bottom-padding-50, .top-bottom-padding-50 {
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -977,13 +987,19 @@ video, iframe {
 	}
 }
 
+@media (min-width: 768px) and (orientation: portrait) {
+	.splash, .splash > .inner {
+		height: calc(75vh - 80px);
+	}
+}
+
 @media (max-width: 850px) and (orientation: landscape) {
 	.tagline {
 		padding: 50px 0;
 	}
-	/*.home .content-wrapper .carousel ul.slick-dots {
-		padding-bottom: 50px;
-	}*/
+	.splash, .splash > .inner {
+		height: auto;
+	}
 	.slick-prev, .slick-next {
 		transform: translate(0, -150%);
 	}
@@ -1073,6 +1089,9 @@ video, iframe {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.splash, .splash > .inner {
+		height: 75vh;
+	}
 	.two_third_img, .full_img {
 		height: 600px;
 	}
@@ -1098,7 +1117,7 @@ video, iframe {
 }
 
 @media (min-width: 1920px) {
-	.navbar:after, .loading-screen, .video-container-fixed {
+	.navbar:after, .loading-screen, .splash-static-container {
 		left: 500px;
 	}
 	.menu-logo-container {
