@@ -1146,6 +1146,16 @@ video, iframe {
 	}
 }
 
+/*@media (min-width: 1025px) {
+	
+	.carousel.slick-dotted.slick-slider {
+		margin-bottom: 80px;
+	}
+	.carousel .slick-dots {
+		bottom: -35px;
+	}
+}*/
+
 @media (max-width: 450px) {
 	.slick-prev, .slick-next {
 		transform: translate(0, -90%);
