@@ -132,7 +132,7 @@ $('a[href*=#]:not([href=#])').click(function() {
 // END SMOOTH SCROLL TO ANCHORS
 
 $('.navbar a[href*=\\#]').click(function() {
-	$('body').toggleClass('clicked');
+	$('body').addClass('clicked');
 	if ( $('body').hasClass('clicked') ) {
 		if (window.matchMedia("(max-width: 980px)").matches) {
 			$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
