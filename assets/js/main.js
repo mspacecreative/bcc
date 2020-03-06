@@ -52,13 +52,15 @@ function mobileSplashContainerHeight() {
 	        heightCalc = viewPortHeight - mobileHeaderHeight,
 	      splashHeight = $('.splash').height();
 	if (window.matchMedia("(max-width: 450px)").matches) {
-		//$('.content-wrapper').css('padding-top', mobileHeaderHeight);
-		//$('.splash-static-container').css('top', mobileHeaderHeight);
 		$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 		$('.splash-static-container, .splash').height(viewPortHeight);
+		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
+		$('.home .content-wrapper').css('padding-top', '0');
 	} else if (window.matchMedia("(max-width: 980px) and (orientation: landscape)").matches) {
 		$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 		$('.splash-static-container, .splash').css('height', 'auto');
+		$('.content-wrapper').css('padding-top', mobileHeaderHeight);
+		$('.home .content-wrapper').css('padding-top', '0');
 	} else if (window.matchMedia("(max-width: 980px)").matches) {
 		$('.splash > .inner').outerHeight(splashHeight - mobileHeaderHeight).css({
 			'padding-bottom' : '0',
