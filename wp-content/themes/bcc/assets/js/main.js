@@ -138,7 +138,6 @@
 				$('.home .content-wrapper').css('padding-top', '0');
 			} else if (window.matchMedia("(min-width: 981px) and (max-width: 1024px)").matches) {
 				$('.splash-static-container, .splash, .splash > .inner').height(viewPortHeight);
-				$('.content-wrapper').css('padding-top', '0');
 				$('.splash-static-container').css('top', '0');
 			} else {
 				$('.content-wrapper').css('padding-top', '0');
