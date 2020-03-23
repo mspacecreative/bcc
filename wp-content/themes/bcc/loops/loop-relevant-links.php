@@ -357,7 +357,3 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 <?php endif;
 
 endif;
-
-endwhile;
-
-endif; wp_reset_query(); ?> ?>
