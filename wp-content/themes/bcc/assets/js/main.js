@@ -139,7 +139,7 @@
 			} else if (window.matchMedia("(min-width: 981px) and (max-width: 1024px)").matches) {
 				$('.splash-static-container, .splash, .splash > .inner').height(viewPortHeight);
 				$('.splash-static-container').css('top', '0');
-			} else if (window.matchMedia("(max-height: 800px)").matches) {
+			} else if (window.matchMedia("(max-height: 700px)").matches) {
 				$('.splash-static-container, .splash, .splash > .inner').css('height', '100%');
 				$('.tagline').css({
 					'padding-top' : '15%',
