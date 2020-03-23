@@ -215,7 +215,7 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 <?php else : ?>
 <div class="section">
 <?php endif; ?>
-	<div class="inner no-top-bottom-padding">
+	<div class="inner testing no-top-bottom-padding">
 		
 		<?php if ( $rowheading ) : ?>
 		<div class="inner no-top-bottom-padding centered-title-with-line-rules">
