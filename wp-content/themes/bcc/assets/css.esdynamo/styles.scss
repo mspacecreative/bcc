@@ -1121,9 +1121,9 @@ video, iframe {
 	.splash-static-container {
 		left: 250px;
 	}
-	.splash, .splash > .inner {
+	/*.splash, .splash > .inner {
 		height: 100vh;
-	}
+	}*/
 	.inner.top-bottom-padding-50, .top-bottom-padding-50 {
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -1220,9 +1220,9 @@ video, iframe {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-	.splash, .splash > .inner {
+	/*.splash, .splash > .inner {
 		height: calc(75vh - 80px);
-	}
+	}*/
 }
 
 @media (max-width: 850px) and (orientation: landscape) {

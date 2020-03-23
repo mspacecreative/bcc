@@ -112,7 +112,7 @@
 			$('.splash-static-container').height(splashAreaHeight);
 		}
 		
-		// TAGLINE TOP PADDING
+		/*// TAGLINE TOP PADDING
 		function taglineTopPadding() {
 			var headerHeight = $('.branding-container').outerHeight();
 			if (window.matchMedia("(min-width: 981px)").matches) {
@@ -120,7 +120,7 @@
 					'padding-top' : headerHeight,
 				});
 			}
-		}
+		}*/
 		
 		function mobileSplashContainerHeight() {
 			var viewPortHeight = $(window).height(),
@@ -129,7 +129,6 @@
 			      splashHeight = $('.splash').height();
 			if (window.matchMedia("(max-width: 980px)").matches) {
 				$('.splash > .inner').css('margin-top', mobileHeaderHeight);
-				$('.splash-static-container, .splash').height(viewPortHeight);
 				$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 				$('.home .content-wrapper').css('padding-top', '0');
 			} else if (window.matchMedia("(max-device-width: 850px) and (orientation: landscape)").matches) {
@@ -144,6 +143,7 @@
 			} else {
 				$('.content-wrapper').css('padding-top', '0');
 				$('.splash-static-container').css('top', '0');
+				$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 			}
 		}
 		
@@ -203,7 +203,7 @@
 		// WINDOW LOAD FUNCTIONS
 		$(window).load(function() {
 			
-			taglineTopPadding();
+			//taglineTopPadding();
 			
 			mobileSplashContainerHeight();
 			
@@ -219,7 +219,7 @@
 		// WINDOW RESIZE FUNCTIONS
 		$(window).on('resize orientationchange', function() {
 			
-			taglineTopPadding();
+			//taglineTopPadding();
 			
 			mobileSplashContainerHeight();
 			
