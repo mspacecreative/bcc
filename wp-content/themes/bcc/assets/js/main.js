@@ -143,6 +143,7 @@
 			} else {
 				$('.content-wrapper').css('padding-top', '0');
 				$('.splash-static-container').css('top', '0');
+				$('.splash-static-container, .splash, .splash > .inner').height(heightCalc);
 				$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 			}
 		}
