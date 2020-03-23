@@ -146,7 +146,7 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 		
 		<?php endif;
 		
-		endif wp_reset_query(); ?>
+		endif; wp_reset_query(); ?>
 		
 	</div>
 </div>
