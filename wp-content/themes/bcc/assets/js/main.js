@@ -4,6 +4,14 @@
 		
 		'use strict';
 
+		$('.menu-item-has-children').prepend('<span class="toggle-children"><i class="fa fa-angle-down"></i></span>');
+		
+		// REVEAL SECONDARY MENU ON CLICK
+		$('.toggle-children').click(function() {
+			$(this).siblings('.sub-menu').slideToggle();
+			$(this).toggleClass('open');
+		});
+		
 		/*var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -146,13 +154,6 @@
 			adaptiveHeight: true,
 		});
 		// END CAROUSEL RENDERING
-		
-		// REVEAL SECONDARY MENU ON CLICK
-		$('.menu-item-has-children a').click(function(e) {
-			e.preventDefault();
-			$(this).siblings('.sub-menu').slideToggle();
-			$(this).toggleClass('open');
-		});
 		
 		// MOBILE MENU BUTTON
 		$('.mobile-nav-button').click(function() {
