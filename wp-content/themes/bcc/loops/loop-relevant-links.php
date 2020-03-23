@@ -354,9 +354,7 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 	</div>
 </div>
 
-<?php endif;
-
-else :
+<?php else :
 
 if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 <div class="section light_blue_bg light">
@@ -406,5 +404,3 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 </div>
 
 <?php endif;
-
-endif;
