@@ -150,7 +150,7 @@
 		// REVEAL SECONDARY MENU ON CLICK
 		$('.menu-item-has-children').click(function(e) {
 			e.preventDefault();
-			$(this).siblings('.sub-menu').slideToggle();
+			$(this).children('.sub-menu').slideToggle();
 			$(this).toggleClass('open');
 		});
 		
