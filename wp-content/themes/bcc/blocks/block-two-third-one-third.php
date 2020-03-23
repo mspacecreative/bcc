@@ -1,39 +1,41 @@
 <div class="section">
-	<div class="inner row between-lg no-top-bottom-padding top-lg top-md gutter_1">
-		
-		<?php if( have_rows('left_column') ):
-		while( have_rows('left_column') ): the_row(); ?>
-		<div class="col-lg-8 col-xl-8 mobile-margin-bottom-md-25 col-container">
-			<?php
-			$heading = get_sub_field('heading');
-			$content = get_sub_field('content');
-			if ( $heading ) {
-				echo '<h1 class="bottom-margin-50">' . $heading . '</h1>';
-			}
-			if ( $content ) {
-				echo $content;
-			} ?>
-		</div>
-		<?php endwhile;
-		endif; ?>
-		
-		<?php if( have_rows('right_column') ):
-		while( have_rows('right_column') ): the_row(); ?>
-		<div class="col-lg-4 col-xl-4 col-container">
-			<div class="boxed-content">
-			<?php
-			$heading = get_sub_field('heading');
-			$content = get_sub_field('content');
-			if ( $heading ) {
-				echo '<h3>' . $heading . '</h3>';
-			}
-			if ( $content ) {
-				echo $content;
-			} ?>
+	<div class="inner">
+		<div class="row between-lg no-top-bottom-padding top-lg top-md gutter_1">
+			
+			<?php if( have_rows('left_column') ):
+			while( have_rows('left_column') ): the_row(); ?>
+			<div class="col-lg-8 col-xl-8 mobile-margin-bottom-md-25 col-container">
+				<?php
+				$heading = get_sub_field('heading');
+				$content = get_sub_field('content');
+				if ( $heading ) {
+					echo '<h1 class="bottom-margin-50">' . $heading . '</h1>';
+				}
+				if ( $content ) {
+					echo $content;
+				} ?>
 			</div>
+			<?php endwhile;
+			endif; ?>
+			
+			<?php if( have_rows('right_column') ):
+			while( have_rows('right_column') ): the_row(); ?>
+			<div class="col-lg-4 col-xl-4 col-container">
+				<div class="boxed-content">
+				<?php
+				$heading = get_sub_field('heading');
+				$content = get_sub_field('content');
+				if ( $heading ) {
+					echo '<h3>' . $heading . '</h3>';
+				}
+				if ( $content ) {
+					echo $content;
+				} ?>
+				</div>
+			</div>
+			<?php endwhile;
+			endif; ?>
+			
 		</div>
-		<?php endwhile;
-		endif; ?>
-		
 	</div>
 </div>
