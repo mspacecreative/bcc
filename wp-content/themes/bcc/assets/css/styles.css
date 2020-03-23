@@ -1475,10 +1475,9 @@ video, iframe {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
-	.splash, .splash > .inner {
-		height: 75vh;
-	}
+	  /*.splash, .splash > .inner {
+			height: 75vh;
+		}*/
 	
 	.two_third_img, .full_img {
 		height: 600px;
