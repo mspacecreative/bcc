@@ -148,9 +148,9 @@
 		// END CAROUSEL RENDERING
 		
 		// REVEAL SECONDARY MENU ON CLICK
-		$('.menu-item-has-children').click(function(e) {
+		$('.menu-item-has-children a').click(function(e) {
 			e.preventDefault();
-			$(this).children('.sub-menu').slideToggle();
+			$(this).siblings('.sub-menu').slideToggle();
 			$(this).toggleClass('open');
 		});
 		
