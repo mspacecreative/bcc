@@ -1508,6 +1508,10 @@ video, iframe {
 		margin-left: auto;
 	}
 	
+	.reverse.half_half_section.text_on_left .col-inner {
+		margin-left: 0;
+	}
+	
 	.half_half_section .col-inner {
 		max-width: 725px;
 		padding-left: 8em;
