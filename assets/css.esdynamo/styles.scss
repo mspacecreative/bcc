@@ -22,6 +22,24 @@ img {
 	display: block;
 }
 
+.home .hide-on-home, .home .show-on-home {
+	display: none;
+}
+
+.show-on-home {
+	display: none;
+}
+
+.row.gutter_1 {
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+}
+
+.row.gutter_1 .col-container {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
 .partnerships {
 	background-image: url(/assets/img/backgrounds/breastfeeding-in-wicker-chair.jpg);
 }

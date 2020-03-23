@@ -1,0 +1,86 @@
+<?php
+/* Template Name: Home Page */
+ get_header(); ?>
+
+	<!-- WRAPPER -->
+		<div class="wrapper">
+			
+			<div class="content-wrapper">
+				
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				
+				<div class="splash light-overlay">
+					<div class="splash-static-container">
+						<img data-object-fit="cover" src="https://annualreport.iwk.nshealth.ca/wp-content/uploads/2019/06/breastfeeding.jpg" class="absolute_img">
+						<!--<video data-object-fit="cover" width="1920" height="1080" preload="auto" poster="https://annualreport.iwk.nshealth.ca/wp-content/uploads/2019/06/breastfeeding.jpg" autoplay="" playsinline="" muted="">
+							<source src="https://cdn.mspacecreative.com/videos/breastfeeding.mp4" type="video/mp4">
+						</video>-->
+					</div>
+					<!-- inner -->
+					<div class="inner txtaligncenter">
+						<!-- Example row of columns -->
+						<div class="tagline">
+							<h1>The National Authority for Baby-Friendly Initiative</h1>
+						</div>
+						
+						<?php 
+						$loop = new WP_Query( array( 
+							'post_type' => 'news',
+							'posts_per_page' => -1,
+							)
+						);
+						if ( $loop->have_posts() ) : ?>
+						<div class="maxWidth800 home-carousel-container">
+							<div class="carousel">
+								<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+								<div>
+									<p><?php the_content(); ?></p>
+								</div>
+								<?php endwhile; ?>
+									
+							</div>
+						</div>
+						<?php endif; wp_reset_query(); ?>
+						
+					</div>
+					<!-- / inner -->
+				</div>
+				
+				<div class="content-inner-wrapper">
+					
+					<?php the_content(); ?>
+					
+					<!-- RESOURCES -->
+					<div id="resources" class="section resources">
+						<div class="inner">
+							<div class="inner centered-title-with-line-rules padding-bottom-25">
+								<h2><span class="before-title"></span>Resources<span class="after-title"></span></h2>
+							</div>
+							<div class="inner">
+								<div class="row middle-lg">
+								<div class="col-lg-4 col-md-4 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-25">
+									<a href="/resources.html#reports"><h3 class="icon-title reports">Reports</h3></a>
+								</div>
+								<div class="col-lg-4 col-md-4 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-25">
+									<a href="/resources#videos"><h3 class="icon-title videos">Video Media</h3></a>
+								</div>
+								<div class="col-lg-4 col-md-4 row col-sm-6 col-xs-12 middle-lg center-lg center-xs">
+									<a href="/resources.html#educational-resources"><h3 class="icon-title links">Relevant Links</h3></a>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<!-- / RESOURCES -->
+					
+				<?php endwhile; else : ?>
+				<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>
+					
+				</div>
+				<!-- / CONTENT INNER WRAPPER -->
+				
+			</div>
+			<!-- / CONTENT WRAPPER -->
+
+			<?php get_footer(); ?>
