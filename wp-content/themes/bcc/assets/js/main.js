@@ -36,6 +36,11 @@
 			$(this).prop('src',videoURL);
 		});
 		
+		$(function(){
+			$('iframe[src*="http://www.youtube.com/embed/"]').each(function(i) {
+				this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+		});
+		
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
 				$(this).addClass('hide-overlay');
