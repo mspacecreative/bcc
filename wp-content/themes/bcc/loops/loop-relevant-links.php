@@ -24,8 +24,8 @@ if ( $loop->have_posts() ) :
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
 			<div class="boxed-content">
 				<?php
-				$rowheading = get_field('row_heading');
-				$content = get_field('content');
+				$rowheading = get_field('row_heading', $post->ID);
+				$content = get_field('content', $post->ID);
 				
 					
 				if ( $rowheading ) {
