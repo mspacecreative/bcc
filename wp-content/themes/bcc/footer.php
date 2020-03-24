@@ -42,6 +42,7 @@
 		</script>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
 		<script>
 			var tag = document.createElement('script');
 		    tag.src = "https://www.youtube.com/iframe_api";
@@ -51,13 +52,13 @@
 		    function onYouTubeIframeAPIReady() {
 		        var $ = jQuery;
 		        var players = [];
-		        $('iframe').filter(function(){return this.src.indexOf('https://www.youtube.com/') == 0}).each( function (k, v) {
+		        $('iframe').filter(function(){return this.src.indexOf('https://www.youtube.com/') == 0}).each( function (k) {
 		            if (!this.id) { this.id='embeddedvideoiframe' + k }
 		            players.push(new YT.Player(this.id, {
 		                events: {
 		                    'onStateChange': function(event) {
 		                        if (event.data == YT.PlayerState.PLAYING) {
-		                            $.each(players, function(k, v) {
+		                            $.each(players, function(k) {
 		                                if (this.getIframe().id != event.target.getIframe().id) {
 		                                    this.pauseVideo();
 		                                }
