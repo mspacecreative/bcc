@@ -11,15 +11,11 @@ $args = array(
 	)
 );
 $loop = new WP_Query( $args );
-if ( $loop->have_posts() ) :
-		
-	if( have_rows('columns_grid') ): ?>
+if ( $loop->have_posts() ) : ?>
 		
 	<div class="row between-lg between-md gutter-space-1">
 			
-		<?php while ( $loop->have_posts() ) : $loop->the_post();
-			
-		while( have_rows('columns_grid') ): the_row(); ?>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
 			<div class="boxed-content">
@@ -39,12 +35,8 @@ if ( $loop->have_posts() ) :
 			</div>
 		</div>
 			
-		<?php endwhile;
-			
-		endwhile; ?>
+		<?php endwhile; ?>
 			
 	</div>
 		
-	<?php endif;
-		
-endif; wp_reset_query(); ?>
+<?php endif; wp_reset_query(); ?>
