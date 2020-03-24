@@ -45,8 +45,7 @@ $vimeo = get_field('vimeo', $post->ID); ?>
 							
 	<!-- YOUTUBE -->
 	<?php elseif ( $youtube ): ?>
-	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 no-side-padding mobile-margin-bottom-25">
-		<?php
+	<?php
 		$thumbnail = get_field('thumbnail', $post->ID);
 		if ( !empty( $thumbnail ) ): ?>
 		<div class="video-container video-thumbnail video-youtube">
@@ -58,7 +57,6 @@ $vimeo = get_field('vimeo', $post->ID); ?>
 			<?php echo $youtube ?>
 		</div>
 		<h4><?php the_title(); ?></h4>
-	</div>
 	<!-- / YOUTUBE -->
 			
 	<!-- VIMEO -->
