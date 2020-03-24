@@ -3,11 +3,11 @@ $padding = get_field('padding');
 $maxwidth = get_field('max_width');
 
 if ( $padding == 'both' && $maxwidth ): ?>
-<div class="top-bottom-padding-50 row clear maxWidth800">
+<div class="top-bottom-padding-50 row clear maxWidth600">
 <?php elseif ( $padding == 'top' && $maxwidth ): ?>
-<div class="top-padding row clear maxWidth800">
+<div class="top-padding row clear maxWidth600">
 <?php elseif ( $padding == 'bottom' && $maxwidth ): ?>
-<div class="bottom-padding row clear maxWidth800">
+<div class="bottom-padding row clear maxWidth600">
 <?php elseif ( $padding == 'both' ): ?>
 <div class="top-bottom-padding-50 inner row clear">
 <?php elseif ( $padding == 'top' ): ?>
@@ -15,7 +15,7 @@ if ( $padding == 'both' && $maxwidth ): ?>
 <?php elseif ( $padding == 'bottom' ): ?>
 <div class="bottom-padding row clear">
 <?php elseif ( $maxwidth ): ?>
-<div class="row clear maxWidth800">
+<div class="row clear maxWidth600">
 <?php else : ?>
 <div class="no-top-bottom-padding inner row clear">
 <?php endif; ?>

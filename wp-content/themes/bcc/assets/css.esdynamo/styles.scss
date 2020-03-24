@@ -235,10 +235,17 @@ footer {
 	transition: 0.4s ease-in-out;
 }
 
-.maxWidth800 {
-	max-width: 800px;
+.maxWidth800, .maxWidth600 {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.maxWidth600 {
+	max-width: 600px;
+}
+
+.maxWidth800 {
+	max-width: 800px;
 }
 
 .padding-bottom-50 {
