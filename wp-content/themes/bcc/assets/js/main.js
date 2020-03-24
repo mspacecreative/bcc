@@ -17,16 +17,31 @@
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		
-		function onPlayerStateChange(event) {
+		players = new Array();
 
-		if (event.data == YT.PlayerState.PLAYING) {
-		    var temp = event.target.getVideoUrl();
-		    var tempPlayers = $(".yt-videos");
-		    for (var i = 0; i < players.length; i++) {
-		        if (players[i].getVideoUrl() != temp) players[i].stopVideo();
-		
-		    }
-		}
+	    function onYouTubeIframeAPIReady() {
+	        var temp = $(".yt-videos");
+	        for (var i = 0; i < temp.length; i++) {
+	            var t = new YT.Player($(temp[i]).attr('id'), {
+	                events: {
+	                    'onStateChange': onPlayerStateChange
+	                }
+	            });
+	            players.push(t);
+	        }
+	    }
+	    onYouTubeIframeAPIReady();
+	
+	    function onPlayerStateChange(event) {
+	        if (event.data == YT.PlayerState.PLAYING) {
+	            var temp = event.target.a.src;
+	            var tempPlayers = $(".yt-videos");
+	            for (var i = 0; i < players.length; i++) {
+	                if (players[i].a.src != temp) 
+	                    players[i].stopVideo();
+	            }
+	        }
+	    }
 		
 		var num = 1;
 		$(".video-container iframe").each(function() {
