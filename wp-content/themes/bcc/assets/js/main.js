@@ -43,7 +43,7 @@
 		
 		var num = 1;
 		$(".video-container iframe").each(function() {
-			$(this).attr('id', 'video-' + num++ );
+			//$(this).attr('id', 'video-' + num++ );
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
 			$(this).prop('src',videoURL);
