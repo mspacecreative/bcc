@@ -21,7 +21,7 @@ if ( $loop->have_posts() ) : ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post();
 $mp4 = get_field('mp4', $post->ID);
 $youtube = get_field('youtube', $post->ID);
-$vimeo = get_field('vimeo', $post->ID);
+$vimeo = get_field('vimeo', $post->ID); ?>
 			
 	<!-- MP4 -->
 	<?php if ( $mp4 ): ?>
