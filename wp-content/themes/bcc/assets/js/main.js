@@ -17,15 +17,35 @@
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		
-		var player;
-		function onYouTubePlayerAPIReady() {
-		    player = new YT.Player('player', {
-		      playerVars: { enablejsapi: 1 },
-		      events: {
-		        'onReady': onPlayerReady,
-		        'onStateChange': onPlayerStateChange
-		      }
-		    });
+		players = new Array();
+
+		function onYouTubeIframeAPIReady() {
+		    var temp = $("iframe.yt_players");
+		    for (var i = 0; i < temp.length; i++) {
+		        var t = new YT.Player($(temp[i]).attr('id'), {
+		            events: {
+		                'onStateChange': onPlayerStateChange
+		            }
+		        });
+		        players.push(t);
+		    }
+		
+		}
+		onYouTubeIframeAPIReady();
+		
+		
+		function onPlayerStateChange(event) {
+		
+		    if (event.data == YT.PlayerState.PLAYING) {
+		        //alert(event.target.getVideoUrl());
+		       // alert(players[0].getVideoUrl());
+		        var temp = event.target.getVideoUrl();
+		        var tempPlayers = $("yt-videos");
+		        for (var i = 0; i < players.length; i++) {
+		            if (players[i].getVideoUrl() != temp) players[i].stopVideo();
+		
+		        }
+		    }
 		}
 		
 		var num = 1;
@@ -34,12 +54,8 @@
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
 			$(this).prop('src',videoURL);
+			$(this).addClass('yt-videos');
 		});
-		
-		$('iframe[src*="http://www.youtube.com/embed/"]').each(function(i) {
-			$(this).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-		});
-		
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
 				$(this).addClass('hide-overlay');
