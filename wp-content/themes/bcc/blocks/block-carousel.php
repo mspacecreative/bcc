@@ -21,7 +21,7 @@ if ( $padding == 'both' && $maxwidth ): ?>
 <?php endif; ?>
 
 	<div class="col-lg-12 col-md-12 col-md-12 col-sm-12 col-xs-12 col-container">
-		<div class="carousel">
+		<div class="carousel content-carousel">
 						
 			<?php
 			$images = get_field('photo_gallery');
@@ -31,7 +31,9 @@ if ( $padding == 'both' && $maxwidth ): ?>
 						
 			<div>
 				<img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<?php if ( $image ): ?>
 				<p><?php echo $image['caption']; ?></p>
+				<?php endif; ?>
 			</div>
 						
 			<?php 

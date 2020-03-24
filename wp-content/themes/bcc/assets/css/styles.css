@@ -11,6 +11,11 @@ img {
 	display: block;
 }
 
+.content-carousel.carousel .slick-dots {
+	bottom: auto;
+	top: 100%;
+}
+
 #relevant-links .col-container {
 	padding-bottom: 3rem;
 }
@@ -822,7 +827,7 @@ body {
 
 .slick-list p {
 	margin: 0;
-	padding: 15px 0;
+	padding: 15px 0 0;
 }
 
 .desktop-menu-toggle {
