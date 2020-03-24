@@ -7,12 +7,7 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25">
 							<h3>Subscribe to our newsletter</h3>
-							<form method="post" action="">
-								<input class="form_input" type="text" name="First Name" value="" placeholder="First Name" />
-								<input class="form_input" type="text" name="Last Name" value="" placeholder="Last Name" />
-								<input class="form_input" type="email" name="Email Address" value="" placeholder="Email Address" />
-								<input class="form_submit" type="submit" name="Subscribe" value="Subscribe" />
-							</form>
+							<?php echo do_shortcode('[contact-form-7 id="585" title="List Builder Form"]'); ?>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 							<h3>Get in touch</h3>
