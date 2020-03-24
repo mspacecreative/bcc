@@ -31,7 +31,9 @@
 		var num = 1;
 		$(".video-container iframe").each(function() {
 			$(this).attr('id', 'video-' + num++ );
-			$(this).attr('src' + '&enablejsapi=1')
+			var videoURL = $(this).prop('src');
+			videoURL += "&enablejsapi=1";
+			ytVideo.prop('src',videoURL);
 		});
 		
 		$('.video-mp4').each(function() {
@@ -52,9 +54,9 @@
 		$('.video-youtube').each(function() {
 			$('.video-youtube').click(function() {
 				$(this).addClass('hide-overlay');
-				var ytVideo = $('.video-youtube').find('ifreame');
+				var ytVideo = $('.video-youtube').find('iframe');
 				var videoURL = ytVideo.prop('src');
-				videoURL += "&autoplay=1";
+				videoURL += "?autoplay=1";
 				ytVideo.prop('src',videoURL);
 			});
 		});
