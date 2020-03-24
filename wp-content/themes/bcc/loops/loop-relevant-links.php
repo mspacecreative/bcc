@@ -28,7 +28,10 @@
 			}
 			if ( $content ) {
 				echo $content;
-			} ?>
+			} 
+			
+			include 'includes/cta-button-relevant-links.php' ?>
+			
 		</div>
 	</div>
 			
