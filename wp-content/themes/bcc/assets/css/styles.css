@@ -11,6 +11,10 @@ img {
 	display: block;
 }
 
+#relevant-links .col-container {
+	padding-bottom: .5rem;
+}
+
 .inline-links, .inline-links-wrap {
 	display: inline-block;
 	padding-right: 60px;
