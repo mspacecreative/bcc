@@ -245,7 +245,7 @@ form {
 	font-size: 16px;
 }
 
-.form_field input, .form_field textarea {
+.form_field input, .form_field textarea, form input {
 	border: 1px solid #c9c9c9;
 	width: 100%;
 }
@@ -290,7 +290,7 @@ form {
 	margin-right: 15px;
 }
 
-.form_field input, .form_field select, .form_field textarea {
+.form_field input, .form_field select, .form_field textarea, form input {
 	padding: 15px;
 	font-size: 14px;
 }
