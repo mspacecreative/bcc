@@ -42,11 +42,10 @@
 		});
 		
 		$('.video-youtube').each(function() {
-			$('.video-youtube').click(function() {
+			$('.video-youtube').click(function(e) {
 				$(this).addClass('hide-overlay');
-				var videoURL = $(this).children('iframe').prop('src');
-				videoURL += "?autoplay=1";
-				$(this).children('iframe').prop('src',videoURL);
+				$(this).children('iframe')[0].src += "&autoplay=1";
+				e.preventDefault();
 			});
 		});
 		
