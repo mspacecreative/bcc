@@ -249,5 +249,3 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 </div>
 
 <?php endif;
-
-endif;
