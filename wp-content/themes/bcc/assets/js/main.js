@@ -38,7 +38,7 @@
         });
     }*/
 		
-		$(".video-container iframe").each(function() {
+		$("iframe").each(function() {
 			$(this).addClass(function(i){
 				return "video" + (i + 1);
 			});
