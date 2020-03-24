@@ -38,9 +38,8 @@
         });
     }*/
 		
-		var rowNum = 0;
 		rowNum++;
-		$('.video-container iframe').attr('id','video-' + rowNum );
+		$('.video-container iframe').attr('id','video-' +rowNum+ );
 		
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
