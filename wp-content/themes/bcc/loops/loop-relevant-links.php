@@ -9,15 +9,15 @@ $blockanchor = get_field('block_anchor');
 if ( $blockanchor ):
 
 if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
-<div class="section light_blue_bg light">
+<div id="<?php echo $blockanchor ?>" class="section light_blue_bg light">
 <?php elseif ( $bgcolor == 'lightblue' ): ?>
-<div class="section light_blue_bg">
+<div id="<?php echo $blockanchor ?>" class="section light_blue_bg">
 <?php elseif ( $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
-<div class="section light_grey_bg light">
+<div id="<?php echo $blockanchor ?>" class="section light_grey_bg light">
 <?php elseif ( $bgcolor == 'lightgrey' ): ?>
-<div class="section light_grey_bg">
+<div id="<?php echo $blockanchor ?>" class="section light_grey_bg">
 <?php else : ?>
-<div class="section">
+<div id="<?php echo $blockanchor ?>" class="section">
 <?php endif; ?>
 	<div class="inner testing no-top-bottom-padding">
 		
