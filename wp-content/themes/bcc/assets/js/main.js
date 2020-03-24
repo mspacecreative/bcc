@@ -61,10 +61,10 @@
 		$('.video-youtube').each(function() {
 			$('.video-youtube').click(function() {
 				$(this).addClass('hide-overlay');
-				var videoURL = $('#video-' + rowNum).prop('src');
+				var videoURL = $('#video-' + num).prop('src');
 				videoURL += "&autoplay=1";
-				$('#video-' + rowNum).not($(this).prop('src', ''));
-				$('#video-' + rowNum).prop('src',videoURL);
+				$('#video-' + num).not($(this).prop('src', ''));
+				$('#video-' + num).prop('src',videoURL);
 			});
 		});
 		
