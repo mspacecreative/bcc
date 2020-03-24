@@ -17,6 +17,37 @@
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		
+		layers = new Array();
+
+		function onYouTubeIframeAPIReady() {
+		  var temp = $(".yt-videos");
+		  for (var i = 0; i < temp.length; i++) {
+		    var t = new YT.Player($(temp[i]).attr('id'), {
+		      events: {
+		        'onStateChange': onPlayerStateChange
+		      }
+		    });
+		    players.push(t);
+		  }
+		
+		}
+		onYouTubeIframeAPIReady();
+		
+		
+		function onPlayerStateChange(event) {
+		
+		  if (event.data == YT.PlayerState.PLAYING) {
+		    //alert(event.target.getVideoUrl());
+		    // alert(players[0].getVideoUrl());
+		    var temp = event.target.getVideoUrl();
+		    var tempPlayers = $(".yt-videos");
+		    for (var i = 0; i < players.length; i++) {
+		      if (players[i].getVideoUrl() != temp) players[i].stopVideo();
+		
+		    }
+		  }
+		}
+		
 		var num = 1;
 		$(".video-container iframe").each(function() {
 			$(this).attr('id', 'video-' + num++ );
