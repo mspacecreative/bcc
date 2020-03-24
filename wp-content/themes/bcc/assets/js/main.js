@@ -36,9 +36,8 @@
 			$(this).prop('src',videoURL);
 		});
 		
-		$(function(){
-			$('iframe[src*="http://www.youtube.com/embed/"]').each(function(i) {
-				this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+		$('iframe[src*="http://www.youtube.com/embed/"]').each(function(i) {
+			$(this).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 		});
 		
 		$('.video-mp4').each(function() {
