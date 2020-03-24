@@ -12,35 +12,20 @@
 			$(this).toggleClass('open');
 		});
 		
-		players = new Array();
-
-		function onYouTubeIframeAPIReady() {
-		  var temp = $(".yt-videos");
-		  for (var i = 0; i < temp.length; i++) {
-		    var t = new YT.Player($(temp[i]).attr('id'), {
-		      events: {
-		        'onStateChange': onPlayerStateChange
-		      }
-		    });
-		    players.push(t);
-		  }
-		
-		}
-		onYouTubeIframeAPIReady();
-		
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		
 		function onPlayerStateChange(event) {
-		
-		  if (event.data == YT.PlayerState.PLAYING) {
-		    //alert(event.target.getVideoUrl());
-		    // alert(players[0].getVideoUrl());
+
+		if (event.data == YT.PlayerState.PLAYING) {
 		    var temp = event.target.getVideoUrl();
 		    var tempPlayers = $(".yt-videos");
 		    for (var i = 0; i < players.length; i++) {
-		      if (players[i].getVideoUrl() != temp) players[i].stopVideo();
+		        if (players[i].getVideoUrl() != temp) players[i].stopVideo();
 		
 		    }
-		  }
 		}
 		
 		var num = 1;
