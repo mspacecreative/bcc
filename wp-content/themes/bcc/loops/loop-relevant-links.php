@@ -1,4 +1,4 @@
-<div class="row between-lg between-md gutter-space-1">
+<div class="row gutter-space-1">
 			
 	<?php 
 	$args = array(
