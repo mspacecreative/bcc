@@ -41,7 +41,7 @@
 		var num = 0;
 		$('.video-container iframe').each(function() {
 			$(this).attr('id','video-' +num+ );
-		}
+		});
 		
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
