@@ -49,7 +49,7 @@ $vimeo = get_field('vimeo', $post->ID); ?>
 		<?php
 		$thumbnail = get_field('thumbnail', $post->ID);
 		if ( !empty( $thumbnail ) ): ?>
-		<div class="video-container video-thumbnail video-mp4">
+		<div class="video-container video-thumbnail video-youtube">
 			<img data-object-fit="cover" class="video_thumb_img" src="<?php echo esc_url($thumbnail['url']); ?>" alt="<?php echo esc_attr($thumbnail['alt']); ?>">
 		<?php else : ?>
 		<div class="video-container video-placeholder video-mp4">
@@ -67,7 +67,7 @@ $vimeo = get_field('vimeo', $post->ID); ?>
 		<?php
 		$thumbnail = get_field('thumbnail', $post->ID);
 		if ( !empty( $thumbnail ) ): ?>
-		<div class="video-container video-thumbnail video-mp4">
+		<div class="video-container video-thumbnail video-vimeo">
 			<img data-object-fit="cover" class="video_thumb_img" src="<?php echo esc_url($thumbnail['url']); ?>" alt="<?php echo esc_attr($thumbnail['alt']); ?>">
 		<?php else : ?>
 		<div class="video-container video-placeholder video-mp4">
