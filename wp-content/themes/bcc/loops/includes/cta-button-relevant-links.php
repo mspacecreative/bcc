@@ -1,5 +1,5 @@
 <?php
-$linklabel = get_field('lin_label', $post->ID);
+$linklabel = get_field('link_label', $post->ID);
 $exturl = get_field('link_url', $post->ID);
 $pagelink = get_field('page_link', $post->ID);
 $pdf = get_field('upload_pdf', $post->ID);
