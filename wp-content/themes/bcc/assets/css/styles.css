@@ -896,7 +896,7 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	padding-bottom: 56.25%;
 }
 
-.video-container.hide-overlay:after, .video-container.hide-overlay:before {
+.video-container.hide-overlay:after, .video-container.hide-overlay:before, .video-container.hide-overlay .video_thumb_img {
 	display: none;
 }
 
