@@ -12,12 +12,7 @@
 			$(this).toggleClass('open');
 		});
 		
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-		
-		layers = new Array();
+		players = new Array();
 
 		function onYouTubeIframeAPIReady() {
 		  var temp = $(".yt-videos");
@@ -31,6 +26,7 @@
 		  }
 		
 		}
+		onYouTubeIframeAPIReady();
 		
 		
 		function onPlayerStateChange(event) {
