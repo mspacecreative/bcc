@@ -61,10 +61,9 @@
 		$('.video-youtube').each(function() {
 			$('.video-youtube').click(function() {
 				$(this).addClass('hide-overlay');
-				var videoURL = $('#video-' + num).prop('src');
+				var videoURL = $(this).find('iframe').prop('src');
 				videoURL += "&autoplay=1";
-				$('#video-' + num).not($(this).prop('src', ''));
-				$('#video-' + num).prop('src',videoURL);
+				$(this).find('iframe').prop('src',videoURL);
 			});
 		});
 		
