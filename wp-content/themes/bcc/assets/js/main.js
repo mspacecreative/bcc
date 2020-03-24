@@ -54,8 +54,8 @@
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
 			$(this).prop('src',videoURL);
-			$(this).addClass('yt-videos');
 		});
+		
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
 				$(this).addClass('hide-overlay');
