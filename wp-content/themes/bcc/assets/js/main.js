@@ -44,10 +44,9 @@
 		$('.video-youtube').each(function() {
 			$('.video-youtube').click(function() {
 				$(this).addClass('hide-overlay');
-				var ytVideo = $('.video-youtube').find('iframe');
-				var videoURL = ytVideo.prop('src');
+				var videoURL = $(this).children('iframe').prop('src');
 				videoURL += "?autoplay=1";
-				ytVideo.prop('src',videoURL);
+				$(this).children('iframe').prop('src',videoURL);
 			});
 		});
 		
