@@ -942,7 +942,7 @@ video, iframe {
 	height: 100%;
 }
 
-.video-placeholder:before {
+.video-placeholder:before, .video_thumb_img {
 	top: 0;
 	left: 0;
 	position: absolute;
