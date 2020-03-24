@@ -18,19 +18,21 @@ if ( $blockanchor && $bgcolor == 'lightblue' ): ?>
 
 <?php else : ?>
 <div class="section white_bg">
-<?php endif;
+<?php endif; ?>
 
- 	if ( $rowheading ) : ?>
- 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
- 		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
- 	</div>
- 	<?php endif;
+ 	<div class="inner">
  	
- 	if ( $shortcode ) : ?>
-	<div class="inner">
-		<?php echo $shortcode ?>
-	</div>
-	<?php endif; ?>
+	 	<?php if ( $rowheading ) : ?>
+	 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
+	 		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
+	 	</div>
+	 	<?php endif;
+	 	
+	 	if ( $shortcode ) {
+			echo $shortcode;
+		} ?>
+		
+ 	</div>
 	
 </div>
 
@@ -47,19 +49,21 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
 
 <?php else : ?>
 <div class="section white_bg">
-<?php endif;
+<?php endif; ?>
 
- 	if ( $rowheading ) : ?>
- 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
- 		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
- 	</div>
- 	<?php endif;
+ 	<div class="inner">
  	
- 	if ( $shortcode ) : ?>
-	<div class="inner">
-		<?php echo $shortcode ?>
-	</div>
-	<?php endif; ?>
+	 	<?php if ( $rowheading ) : ?>
+	 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
+	 		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
+	 	</div>
+	 	<?php endif;
+	 	
+	 	if ( $shortcode ) {
+			echo $shortcode;
+		} ?>
+		
+ 	</div>
 	
 </div>
 
@@ -76,19 +80,21 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
 
 <?php else : ?>
 <div class="section white_bg">
-<?php endif;
+<?php endif; ?>
 
- 	if ( $rowheading ) : ?>
- 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
- 		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
- 	</div>
- 	<?php endif;
+ 	<div class="inner">
  	
- 	if ( $shortcode ) : ?>
-	<div class="inner">
-		<?php echo $shortcode ?>
-	</div>
-	<?php endif; ?>
+	 	<?php if ( $rowheading ) : ?>
+	 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
+	 		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
+	 	</div>
+	 	<?php endif;
+	 	
+	 	if ( $shortcode ) {
+			echo $shortcode;
+		} ?>
+		
+ 	</div>
 	
 </div>
 
