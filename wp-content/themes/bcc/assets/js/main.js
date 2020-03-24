@@ -38,6 +38,19 @@
         });
     }*/
 		
+		var i = 0;
+		$(".video-container iframe").each(function(){
+		    $(this).attr('id', function(i) {
+		        return "video-" + (i+1);
+		    });
+		});
+		
+		$(".video-container iframe").each(function() {
+			$(this).addClass(function(i){
+				return "video" + (i + 1);
+			});
+		});
+		
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
 				$(this).addClass('hide-overlay');
@@ -95,13 +108,6 @@
 			//adjustVideoHeight();
 			
 			staticSplashImgBg();
-			
-			var i = 0;
-			$(".video-container iframe").each(function(){
-			    $(this).attr('id', function(i) {
-			        return "video-" + (i+1);
-			    });
-			});
 		});
 		
 		/*function adjustVideoHeight() {
