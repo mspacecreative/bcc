@@ -20,7 +20,7 @@
 		players = new Array();
 
 		function onYouTubeIframeAPIReady() {
-		    var temp = $("iframe.yt_players");
+		    var temp = $("yt-videos");
 		    for (var i = 0; i < temp.length; i++) {
 		        var t = new YT.Player($(temp[i]).attr('id'), {
 		            events: {
@@ -54,6 +54,7 @@
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
 			$(this).prop('src',videoURL);
+			$(this).addClass('yt-videos');
 		});
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
