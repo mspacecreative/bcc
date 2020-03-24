@@ -24,12 +24,12 @@ if ( $loop->have_posts() ) :
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
 			<div class="boxed-content">
 				<?php
-				$heading = get_field('heading');
+				$rowheading = get_field('row_heading');
 				$content = get_field('content');
 				
 					
-				if ( $heading ) {
-					echo '<h3>' . $heading . '</h3>';
+				if ( $rowheading ) {
+					echo '<h3>' . $rowheading . '</h3>';
 				}
 				if ( $content ) {
 					echo $content;
