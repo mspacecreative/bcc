@@ -33,7 +33,7 @@
 			$(this).attr('id', 'video-' + num++ );
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
-			ytVideo.prop('src',videoURL);
+			$(this).prop('src',videoURL);
 		});
 		
 		$('.video-mp4').each(function() {
