@@ -921,7 +921,7 @@ video, iframe {
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
-.video-placeholder > svg {
+.video-placeholder > svg, .video-thumbnail > svg {
 	z-index: 2;
     width: 68px;
     height: 48px;
