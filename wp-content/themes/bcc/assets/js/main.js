@@ -38,9 +38,11 @@
         });
     }*/
 		
-		var num = 0;
-		$('.video-container iframe').each(function() {
-			$(this).attr('id','video-' +num+ );
+		var i = 1;
+		$(".video-container iframe").each(function(){
+		    $(this).attr('id', function(i) {
+		        return "video" + ++i;
+		    });
 		});
 		
 		$('.video-mp4').each(function() {
