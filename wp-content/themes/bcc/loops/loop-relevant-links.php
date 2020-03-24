@@ -1,12 +1,6 @@
 <div class="row between-lg between-md gutter-space-1">
 			
 	<?php 
-	$rowheading = get_field('row_heading');
-	if ( $rowheading ) {
-		echo '<h3>' . $rowheading . '</h3>';
-	} ?>
-		
-	<?php 
 	$args = array(
 		'post_type' => 'resources',
 		'posts_per_page'=> -1,
