@@ -39,7 +39,7 @@
     }*/
 		
 		$(".video-container iframe").each(function() {
-			$(this).addClass( $(this).text().split(' ')[1] );
+			$(this).addClass("video-" + (i + 1)%3);
 		});
 		
 		$('.video-mp4').each(function() {
