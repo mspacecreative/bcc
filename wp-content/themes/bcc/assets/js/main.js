@@ -17,14 +17,13 @@
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		
-		
-		
 		var num = 1;
 		$(".video-container iframe").each(function() {
 			$(this).attr('id', 'video-' + num++ );
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
 			$(this).prop('src',videoURL);
+			$(this).addClass('yt-videos');
 		});
 		
 		$('.video-mp4').each(function() {
