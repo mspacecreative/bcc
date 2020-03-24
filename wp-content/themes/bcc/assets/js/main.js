@@ -38,7 +38,6 @@
         });
     }*/
 		
-		var i = 0;
 		$(".video-container iframe").each(function(){
 		    $(this).attr('id', function(i) {
 		        return "video-" + (i+1);
