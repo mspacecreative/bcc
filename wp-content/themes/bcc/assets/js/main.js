@@ -20,7 +20,7 @@
 	    function onYouTubeIframeAPIReady() {
 	        var players = [];
 	        $('iframe').filter(function(){return this.src.indexOf('http://www.youtube.com/') == 0}).each( function (k, v) {
-	            if (!this.id) { this.id='video-' + k }
+	            if (!this.id) { this.id='embeddedvideoiframe' + k }
 	            players.push(new YT.Player(this.id, {
 	                events: {
 	                    'onStateChange': function(event) {
@@ -38,7 +38,7 @@
 	    }    
 
 		
-		var num = 0;
+		var num = 1;
 		$(".video-container iframe").each(function() {
 			//$(this).attr('id', 'video-' + num++ );
 			var videoURL = $(this).prop('src');
