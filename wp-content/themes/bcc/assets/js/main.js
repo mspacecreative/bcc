@@ -38,10 +38,16 @@
         });
     }*/
 		
-		$("iframe").each(function() {
-			$(this).addClass(function(i){
-				return "video" + (i + 1);
-			});
+		var i = 0;
+		$(".video-container iframe").each(function(){
+		    $(this).attr('id', function(i) {
+		        return "video-" + (i+1);
+		    });
+		});
+		
+		var num = 0;
+		$(".video-container iframe").each(function() {
+			$(this).attr('id', 'video-', + num++ + );
 		});
 		
 		$('.video-mp4').each(function() {
