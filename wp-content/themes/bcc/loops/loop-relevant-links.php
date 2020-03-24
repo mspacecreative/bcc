@@ -32,7 +32,7 @@ if ( $loop->have_posts() ) :
 					echo '<h3>' . $heading . '</h3>';
 				}
 				if ( $content ) {
-					echo #content;
+					echo $content;
 				}
 					
 				include 'includes/cta-button-single.php'; ?>
