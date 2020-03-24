@@ -24,8 +24,9 @@ if ( $blockanchor && $bgcolor == 'lightblue' ): ?>
  	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
  		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
  	</div>
+ 	<?php endif;
  	
- 	<?php if ( $shortcode ) : ?>
+ 	if ( $shortcode ) : ?>
 	<div class="inner">
 		<?php echo $shortcode ?>
 	</div>
@@ -52,8 +53,9 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
  	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
  		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
  	</div>
+ 	<?php endif;
  	
- 	<?php if ( $shortcode ) : ?>
+ 	if ( $shortcode ) : ?>
 	<div class="inner">
 		<?php echo $shortcode ?>
 	</div>
@@ -80,8 +82,9 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
  	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
  		<h2 class="bottom-margin-50"><?php echo $rowheading ?></h2>
  	</div>
+ 	<?php endif;
  	
- 	<?php if ( $shortcode ) : ?>
+ 	if ( $shortcode ) : ?>
 	<div class="inner">
 		<?php echo $shortcode ?>
 	</div>
