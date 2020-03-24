@@ -40,7 +40,7 @@
 		
 		var num = 1;
 		$(".video-container iframe").each(function() {
-			$(this).attr('id', 'video-' + num+ );
+			$(this).attr('id', 'video-' + num++ );
 		});
 		
 		$('.video-mp4').each(function() {
