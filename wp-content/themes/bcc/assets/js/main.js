@@ -31,7 +31,7 @@
 		var num = 1;
 		$(".video-container iframe").each(function() {
 			$(this).attr('id', 'video-' + num++ );
-			$(this).prop('src' + '&enablejsapi=1')
+			$(this).attr('src' + '&enablejsapi=1')
 		});
 		
 		$('.video-mp4').each(function() {
