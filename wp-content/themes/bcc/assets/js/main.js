@@ -31,7 +31,6 @@
 		  }
 		
 		}
-		onYouTubeIframeAPIReady();
 		
 		
 		function onPlayerStateChange(event) {
