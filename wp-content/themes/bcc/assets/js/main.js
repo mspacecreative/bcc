@@ -12,9 +12,9 @@
 			$(this).toggleClass('open');
 		});
 
-		//var num = 0;
+		var num = 0;
 		$(".video-container iframe").each(function() {
-			//$(this).attr('id', 'embeddedvideoiframe' + num++ );
+			$(this).attr('id', 'embeddedvideoiframe' + num++ );
 			var videoURL = $(this).prop('src');
 			videoURL += "&enablejsapi=1";
 			$(this).prop('src',videoURL);
