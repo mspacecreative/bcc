@@ -13,9 +13,9 @@
 		});
 		
 		var tag = document.createElement('script');
-	    tag.src = "https://www.youtube.com/iframe_api";
-	    var firstScriptTag = document.getElementsByTagName('script')[0];
-	    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		tag.src = "//www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 	
 	    function onYouTubeIframeAPIReady() {
 		    var $ = jQuery;
@@ -27,7 +27,7 @@
 		                'onStateChange': function(event) {
 		                    if (event.data == YT.PlayerState.PLAYING) {
 		                        $.each(players, function(k, v) {
-		                            if (this.getPlayerState() == YT.PlayerState.PLAYING # checks for only players that are playing
+		                            if (this.getPlayerState() == YT.PlayerState.PLAYING
 		                                  && this.getIframe().id != event.target.getIframe().id) { 
 		                                this.pauseVideo();
 		                            }
