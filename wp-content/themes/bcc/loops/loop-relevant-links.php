@@ -29,9 +29,7 @@ if ( $loop->have_posts() ) : ?>
 				}
 				if ( $content ) {
 					echo $content;
-				}
-					
-				include 'includes/cta-button-single.php'; ?>
+				} ?>
 			</div>
 		</div>
 			
