@@ -763,6 +763,10 @@ body {
 	background-image: url(/assets/img/icons/links.svg);
 }
 
+.gallery:before {
+	background-image: url(/assets/img/icons/gallery.svg);
+}
+
 .light_blue_bg {
 	background-color: #6CCEEF;
 }
