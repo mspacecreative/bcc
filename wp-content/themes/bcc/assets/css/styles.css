@@ -3883,6 +3883,10 @@ video, iframe {
 }
 
 @media (min-width: 981px) {
+	.col-lg-4.col-md-4:nth-child(3n+1):nth-last-child(-n+3), .col-lg-4.col-md-4:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container {
+		padding-bottom: 0;
+	}
+	
 	.two_third_img, .full_img {
 		height: 500px;
 	}
