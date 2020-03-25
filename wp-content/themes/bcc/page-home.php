@@ -57,7 +57,7 @@
 								<h2><span class="before-title"></span>Resources<span class="after-title"></span></h2>
 							</div>
 							<div class="inner">
-								<div class="row middle-lg">
+								<div class="row middle-lg gutter_1">
 								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-25">
 									<a href="/resources#reports"><h3 class="icon-title reports">Reports</h3></a>
 								</div>
