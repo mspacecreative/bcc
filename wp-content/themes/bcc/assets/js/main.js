@@ -39,7 +39,7 @@
 		$('.video-youtube').each(function() {
 			$('.video-youtube').click(function(e) {
 				$(this).addClass('hide-overlay');
-				//$(this).children('iframe')[0].src += "&autoplay=1";
+				$(this).children('iframe')[0].src += "&autoplay=1";
 				e.preventDefault();
 			});
 		});
