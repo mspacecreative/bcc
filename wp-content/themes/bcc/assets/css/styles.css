@@ -764,7 +764,7 @@ body {
 }
 
 .gallery:before {
-	background-image: url(/assets/img/icons/gallery.svg);
+	background-image: url(/../assets/img/icons/gallery.svg);
 }
 
 .light_blue_bg {
