@@ -51,7 +51,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
 <div class="section white_bg">
 <?php endif; ?>
 
- 	<div class="inner">
+ 	<div class="inner no-top-bottom-padding">
  	
 	 	<?php if ( $rowheading ) : ?>
 	 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
@@ -82,7 +82,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
 <div class="section white_bg">
 <?php endif; ?>
 
- 	<div class="inner">
+ 	<div class="inner no-top-bottom-padding">
  	
 	 	<?php if ( $rowheading ) : ?>
 	 	<div class="inner no-top-bottom-padding centered-title-with-line-rules">
