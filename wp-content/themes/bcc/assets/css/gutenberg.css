@@ -1,0 +1,11 @@
+.wp-block {
+	width: 100% !important;
+	max-width: none !important;
+}
+.editor-styles-wrapper .editor-writing-flow {
+	margin: 0 !important;
+	max-width: none !important;
+}
+.editor-styles-wrapper .dark, .acf-icon.dark {
+	color: #fff!important;
+}
