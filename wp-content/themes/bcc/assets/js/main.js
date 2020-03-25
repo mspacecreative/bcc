@@ -104,7 +104,7 @@
 			mobileHeaderHeight = $('.branding-container').outerHeight(),
 			        heightCalc = viewPortHeight - mobileHeaderHeight,
 			      splashHeight = $('.splash').height();
-			if (window.matchMedia("(max-width: 980px)").matches) {
+			if (window.matchMedia("(max-width: 1080px)").matches) {
 				$('.splash > .inner').css('margin-top', mobileHeaderHeight);
 				$('.content-wrapper').css('padding-top', mobileHeaderHeight);
 				$('.home .content-wrapper').css('padding-top', '0');
