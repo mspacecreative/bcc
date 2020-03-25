@@ -58,13 +58,13 @@
 							</div>
 							<div class="inner">
 								<div class="row middle-lg gutter_1">
-								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-25">
+								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
 									<a href="/resources#reports"><h3 class="icon-title reports">Reports</h3></a>
 								</div>
-								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-25">
+								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
 									<a href="/resources#videos"><h3 class="icon-title videos">Video Media</h3></a>
 								</div>
-								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs">
+								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
 									<a href="/resources#relevant-links"><h3 class="icon-title links">Relevant Links</h3></a>
 								</div>
 								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs">
