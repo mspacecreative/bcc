@@ -3731,6 +3731,12 @@ video, iframe {
 		left: -250px;
 		transition: 0.4s ease-in-out;
 	}
+	
+	.loading-screen .fa-spinner {
+		left: 50%;
+		margin-left: -15px;
+		margin-top: -15px;
+	}
 }
 
 @media (min-width: 1081px) {
@@ -3826,12 +3832,6 @@ video, iframe {
 	
 	.desktop-menu-toggle {
 		display: none;
-	}
-	
-	.loading-screen .fa-spinner {
-		left: 50%;
-		margin-left: -15px;
-		margin-top: -15px;
 	}
 	
 	.menu-logo-container {
