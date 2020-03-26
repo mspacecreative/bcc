@@ -68,7 +68,7 @@
 									<a href="/resources#relevant-links"><h3 class="icon-title links">Educational</h3></a>
 								</div>
 								<div class="col-lg-3 col-md-6 row col-sm-6 col-xs-12 middle-lg center-lg center-xs">
-									<a href="/resources#photo-gallery"><h3 class="icon-title gallery">Photo Gallery</h3></a>
+									<a href="/resources#photo-gallery"><h3 class="icon-title gallery">Gallery</h3></a>
 								</div>
 							</div>
 							</div>
