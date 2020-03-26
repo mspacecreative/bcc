@@ -902,13 +902,22 @@ video, iframe {
 	width: 100%;
 	height: 100%;
 }
-.video-placeholder:before, .video_thumb_img {
+.video-placeholder:before {
 	top: 0;
 	left: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	content: "";
+	background-color: $lightgrey;
+	z-index: 1;
+}
+.video_thumb_img {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	background-color: $lightgrey;
 	z-index: 1;
 }
