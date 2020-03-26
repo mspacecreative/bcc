@@ -175,7 +175,7 @@
 		$('.navbar a[href*=\\#]').click(function() {
 			$('body').addClass('clicked');
 			if ( $('body').hasClass('clicked') ) {
-				if (window.matchMedia("(max-width: 980px)").matches) {
+				if (window.matchMedia("(max-width: 1080px)").matches) {
 					$('.navbar, .mobile-nav-button, .branding-container, .wrapper').toggleClass('open');
 					$('.hamburger').toggleClass('is-active');
 				}
