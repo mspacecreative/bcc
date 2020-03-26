@@ -3763,6 +3763,10 @@ video, iframe {
 	.splash-static-container {
 		left: 250px;
 	}
+	
+	.home .branding-container {
+		position: absolute;
+	}
 }
 
 @media (max-width: 980px) {
@@ -4003,10 +4007,6 @@ video, iframe {
 		border-radius: 1000px 0 0 0;
 		background-color: #fff;
 		text-align: right;
-	}
-	
-	.home .branding-container {
-		position: absolute;
 	}
 }
 
