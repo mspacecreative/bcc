@@ -36,6 +36,14 @@
 			$(this).parent().removeClass('hide-overlay');
 		});
 		
+		$('.video-youtube').each(function() {
+			$('.video-youtube').click(function(e) {
+				$(this).addClass('hide-overlay');
+				//$(this).children('iframe')[0].src += "&autoplay=1";
+				e.preventDefault();
+			});
+		});
+		
 		$(document).scroll(function() {
 			var y = $(this).scrollTop();
 			if (y > 200) {
