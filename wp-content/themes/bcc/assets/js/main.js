@@ -38,8 +38,8 @@
 		
 		$('.video-youtube').each(function() {
 			$('.video-youtube').click(function(e) {
-				$('video-youtube').addClass('hide-overlay');
-				$('video-youtube').children('iframe')[0].src += "&autoplay=1";
+				$('.video-youtube').addClass('hide-overlay');
+				$('.video-youtube').children('iframe')[0].src += "&autoplay=1";
 				e.preventDefault();
 			});
 		});
