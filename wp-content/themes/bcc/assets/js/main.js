@@ -36,10 +36,10 @@
 			$(this).parent().removeClass('hide-overlay');
 		});
 		
-		$('.video-youtube').click(function(e) {
-			$('.video-youtube').each(function() {
-				$(this).addClass('hide-overlay');
-				$(this).children('iframe')[0].src += "&autoplay=1";
+		$('.video-youtube').each(function() {
+			$('.video-youtube').click(function(e) {
+				$('video-youtube').addClass('hide-overlay');
+				$('video-youtube').children('iframe')[0].src += "&autoplay=1";
 				e.preventDefault();
 			});
 		});
