@@ -16,7 +16,7 @@
 		$(".video-container iframe").each(function() {
 			//$(this).attr('id', 'embeddedvideoiframe' + num++ );
 			var videoURL = $(this).prop('src');
-			videoURL += "&enablejsapi=1";
+			videoURL += "?html5=1&enablejsapi=1";
 			$(this).prop('src',videoURL);
 			$(this).addClass('yt-videos');
 		});
