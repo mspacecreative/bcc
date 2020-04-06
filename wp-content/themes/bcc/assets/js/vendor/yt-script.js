@@ -92,9 +92,3 @@ function onYouTubeIframeAPIReady() {
   console.log("YouTubeIframeAPI is ready");
   initYoutubePlayers();
 }
-var tag = document.createElement('script');
-//use https when loading script and youtube iframe src since if user is logging in youtube the youtube src will switch to https.
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    //# sourceURL=pen.js
