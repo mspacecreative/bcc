@@ -41,6 +41,7 @@
 				$(this).addClass('hide-overlay');
 				$(this).children('iframe')[0].src += "&autoplay=1";
 				preventDefault();
+				$(this).not($(this).children('iframe')[0].src += "&autoplay=1");
 			});
 		});
 		
