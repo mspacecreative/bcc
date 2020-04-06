@@ -139,6 +139,12 @@ function footerScripts() {
     
     wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
     wp_enqueue_script('main-js'); // Enqueue it!
+    
+    wp_register_script('yt-api', 'https://www.youtube.com/iframe_api', array('jquery'), null, true);
+    wp_enqueue_script('yt-api'); // Enqueue it!
+    
+    wp_register_script('yt-helper', get_template_directory_uri() . '/assets/js/vendor/yt-script.js', array('jquery'), null, true);
+    wp_enqueue_script('yt-helper'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
