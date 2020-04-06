@@ -37,12 +37,11 @@
 		});
 		
 		$('.video-youtube').each(function() {
-			$('.video-youtube').click(function(e) {
+			$('.video-youtube').click(function() {
 				var videoURL = $(this).children('iframe').prop('src');
 				videoURL += "&autoplay=1";
 				$(this).addClass('hide-overlay');
 				$(this).children('iframe').prop('src', videoURL);
-				e.preventDefault();
 			});
 		});
 		
