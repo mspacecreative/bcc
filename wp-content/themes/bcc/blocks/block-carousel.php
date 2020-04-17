@@ -57,7 +57,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' ): ?>
 					<div>
 						<img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 						<?php if ( $image ): ?>
-						<p><?php echo $image['caption']; ?></p>
+						<p><?php echo $image['title']; ?></p>
 						<?php endif; ?>
 					</div>
 								

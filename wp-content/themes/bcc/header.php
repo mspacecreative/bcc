@@ -57,6 +57,9 @@
 				<?php html5blank_nav(); ?>
 			</nav>
 			<!-- /nav -->
+			<!-- search bar -->
+			<?php get_template_part('searchform'); ?>
+			<!-- / search bar -->
 		  </div>
 		</div>
 		<!-- / NAVIGATION -->

@@ -30,7 +30,7 @@
 				echo $content;
 			} 
 			
-			include 'includes/cta-button-relevant-links.php' ?>
+			include 'includes/cta-button-relevant-links-loop.php' ?>
 			
 		</div>
 	</div>

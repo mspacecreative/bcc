@@ -5,10 +5,19 @@ $rowsubheading = get_field('row_sub_heading');
 $bgcolor = get_field('background_colour');
 $textcolor = get_field('text_colour');
 $boxedcontent = get_field('boxed_content');
+$blockanchor = get_field('block_anchor');
 
 if ( $columns == 'two' ):
 
-if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
+if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section light_blue_bg light">
+<?php elseif ( $blockanchor && $bgcolor == 'lightblue' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section light_blue_bg">
+<?php elseif ( $blockanchor && $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section light_grey_bg light">
+<?php elseif ( $blockanchor && $bgcolor == 'lightgrey' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section light_grey_bg">
+<?php elseif ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 <div class="section light_blue_bg light">
 <?php elseif ( $bgcolor == 'lightblue' ): ?>
 <div class="section light_blue_bg">
@@ -16,6 +25,8 @@ if ( $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 <div class="section light_grey_bg light">
 <?php elseif ( $bgcolor == 'lightgrey' ): ?>
 <div class="section light_grey_bg">
+<?php elseif ( $blockanchor ): ?>
+<div id="<?php echo $blockanchor ?>" class="section">
 <?php else : ?>
 <div class="section">
 <?php endif; ?>

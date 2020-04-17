@@ -59,9 +59,6 @@
 							<div class="inner" style="padding-right: 0; padding-left: 0;">
 								<div class="row middle-lg gutter_1">
 								<div class="col-lg-3 col-md-3 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
-									<a href="/resources#reports"><h3 class="icon-title reports">Reports</h3></a>
-								</div>
-								<div class="col-lg-3 col-md-3 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
 									<a href="/resources#videos"><h3 class="icon-title videos">Videos</h3></a>
 								</div>
 								<div class="col-lg-3 col-md-3 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
@@ -69,6 +66,9 @@
 								</div>
 								<div class="col-lg-3 col-md-3 row col-sm-6 col-xs-12 middle-lg center-lg center-xs">
 									<a href="/resources#photo-gallery"><h3 class="icon-title gallery">Gallery</h3></a>
+								</div>
+								<div class="col-lg-3 col-md-3 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
+									<a href="/resources#reports"><h3 class="icon-title reports">Reports</h3></a>
 								</div>
 							</div>
 							</div>

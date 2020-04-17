@@ -4,8 +4,19 @@ $fullwidth = get_field('full_width');
 $dropshadow = get_field('drop_shadow');
 $textcolor = get_field('text_colour');
 $contentbg = get_field('content_background_colour');
+$blockanchor = get_field('block_anchor');
 
-if ( $padding == 'top' ): ?>
+if ( $blockanchor && $padding == 'top' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section top-padding no-bottom-padding promo-box-container">
+<?php elseif ( $blockanchor && $padding == 'bottom' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section bottom-padding no-top-padding promo-box-container">
+<?php elseif ( $blockanchor && $padding == 'both' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section top-bottom-padding promo-box-container">
+<?php elseif ( $blockanchor && $padding == 'none' ): ?>
+<div id="<?php echo $blockanchor ?>" class="section no-top-bottom-padding promo-box-container">
+<?php elseif ( $blockanchor && $fullwidth ): ?>
+<div id="<?php echo $blockanchor ?>" class="section no-top-bottom-padding promo-box-container">
+<?php elseif ( $padding == 'top' ): ?>
 <div class="section top-padding no-bottom-padding promo-box-container">
 <?php elseif ( $padding == 'bottom' ): ?>
 <div class="section bottom-padding no-top-padding promo-box-container">

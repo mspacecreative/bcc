@@ -21,7 +21,7 @@ if ( $reverse ):
 	<?php endif; ?>
 		
 		<?php if ( $bgcolor == 'lightblue' ): ?>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding light_blue_bg">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding blue_bg">
 		<?php elseif ( $bgcolor == 'lightgrey' ): ?>
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding light_grey_bg">
 		<?php else : ?>
@@ -61,8 +61,10 @@ if ( $reverse ):
 	<div class="row half_half_section text_on_left">
 	<?php endif; ?>
 		
-		<?php if ( $bgcolor == 'lightblue' ): ?>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding light_blue_bg">
+		<?php if ( $bgcolor == 'lightblue' && $textcolor == 'dark' ): ?>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding blue_bg dark">
+		<?php elseif ( $bgcolor == 'lightblue' ): ?>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding blue_bg">
 		<?php elseif ( $bgcolor == 'lightgrey' ): ?>
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-right-padding light_grey_bg">
 		<?php else : ?>

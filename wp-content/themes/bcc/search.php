@@ -1,19 +1,24 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+	<!-- WRAPPER -->
+	<div class="wrapper">
+			
+		<!-- content-wrapper -->
+		<div class="content-wrapper" style="padding-bottom: 4em;">
 
-			<h1><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
+			<!-- /inner -->
+			<div class="inner no-bottom-padding">
 
-			<?php get_template_part('loop'); ?>
+				<h1><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
+	
+				<?php get_template_part('loops/loop-search'); ?>
+	
+				<?php get_template_part('pagination'); ?>
+				
+			</div>
+			<!-- / inner -->
 
-			<?php get_template_part('pagination'); ?>
+		</div>
+		<!-- / content-wrapper -->
 
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+		<?php get_footer(); ?>

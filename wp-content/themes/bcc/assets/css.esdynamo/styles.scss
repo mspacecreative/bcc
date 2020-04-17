@@ -23,6 +23,29 @@ img {
 	display: block;
 }
 
+.navbar .search .search-input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.search article {
+	margin-bottom: 2em;
+}
+
+.navbar .search {
+	margin: 50px 0;
+}
+
+.navbar .search-submit {
+	font-size: 14px;
+	margin-top: 10px;
+	font-family: 'Public Sans', sans-serif;
+	padding: 5px 10px;
+	border: none;
+	line-height: 1.5em;
+}
+
 .content-carousel.carousel .slick-dots {
 	bottom: auto;
 	top: 100%;
@@ -86,8 +109,20 @@ img {
 	padding-left: 1.5rem;
 }
 
-.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p, .light ol, .light ul, .light .button, .light li {
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p, .light ol, .light ul, .light .button, .light li, .dark h1.light , h1.light, .dark h2.light , h2.light, .light em {
 	color: #fff;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark ol, .dark ul, .dark .button, .dark li, h1.dark, h2.dark {
+	color: #000;
+}
+
+.light_blue_bg.dark .button {
+	color: #fff;
+}
+
+.light_blue_bg.dark .button:after {
+    background-image: url(../img/icons/arrow-right-white.svg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -452,7 +487,7 @@ a {
 	border: none;
 }
 
-.navbar li.current-lang a {
+.navbar li.current-lang a, .navbar .search-submit {
 	background-color: $brandorange;
 	color: #fff;
 }
@@ -513,7 +548,7 @@ $linkcolour: #E72F2C;
 	padding-right: 0;
 }
 .content-wrapper ul {
-	padding: 0 0 0 25px;
+	padding: 0 0 0 18px;
 }
 .content-wrapper ul li {
 	text-indent: -16px;
@@ -755,7 +790,10 @@ body {
 	background-image: url(../../assets/img/icons/gallery.svg);
 }
 .light_blue_bg {
-	background-color: $brandlightblue;
+	background-color: $brandblue;
+}
+.blue_bg {
+	background-color: $brandblue;
 }
 .two_third_one_third_overlay {
 	position: relative;

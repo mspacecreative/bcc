@@ -16,7 +16,7 @@
 								50 51149 Range Road 231<br />
 								Sherwoood Park, AB, T8B 1K5<br />
 							</p>
-							<p>Email: <a href="mailto:bnn@bcc.ca">BNN@bcc.ca</a></p>
+							<p>Email: <a href="mailto:bccwebliaisons@breastfeedingcanada.ca">bccwebliaisons@breastfeedingcanada.ca</a></p>
 						</div>
 					</div>
 				</div>
