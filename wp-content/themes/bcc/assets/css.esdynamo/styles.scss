@@ -540,11 +540,16 @@ $linkcolour: #E72F2C;
 	padding-top: 0;
 	padding-bottom: 0;
 }
-.search .type-attachment > h2:before, .attachment article > .attachment:before {
+.search .type-attachment > h2:after, .attachment article > .attachment:before {
 	content: "\f1c1";
 	font-family: fontAwesome;
 	font-size: 20px;
+}
+.attachment article > .attachment:before {
 	margin-right: 10px;
+}
+.search .type-attachment > h2:after {
+	margin-left: 10px;
 }
 .attachment article > .attachment:after {
 	content: "\f08e";
