@@ -3104,6 +3104,20 @@ a {
 	padding-bottom: 0;
 }
 
+.search .type-attachment > h2:before, .attachment article > .attachment:after {
+	content: "\f1c1";
+	font-family: fontAwesome;
+	font-size: 20px;
+}
+
+.search .type-attachment > h2:before {
+	margin-right: 10px;
+}
+
+.attachment article > .attachment:after {
+	margin-left: 10px;
+}
+
 .inner_no_top_bottom_padding {
 	max-width: 1600px;
 }
