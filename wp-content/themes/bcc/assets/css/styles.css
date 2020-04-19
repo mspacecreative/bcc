@@ -3104,7 +3104,7 @@ a {
 	padding-bottom: 0;
 }
 
-.search .type-attachment > h2:before, .attachment article > .attachment:after {
+.search .type-attachment > h2:before, .attachment article > .attachment:before {
 	content: "\f1c1";
 	font-family: fontAwesome;
 	font-size: 20px;
@@ -3114,6 +3114,7 @@ a {
 .attachment article > .attachment:after {
 	content: "\f08e";
 	margin-left: 10px;
+	font-size: 14px;
 }
 
 .inner_no_top_bottom_padding {
