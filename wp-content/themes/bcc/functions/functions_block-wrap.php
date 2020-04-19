@@ -21,7 +21,7 @@ add_filter( 'render_block', function( $block_content, $block ) {
     return $block_content;
 }, PHP_INT_MAX - 1, 2 );
 
-function wrap_heading_block( $block_content, $block ) {
+/*function wrap_heading_block( $block_content, $block ) {
   if ( 'core/heading' === $block['blockName'] ) {
     $block_content = '<div class="inner">' . $block_content . '</div>';
   } elseif ( 'core/paragraph' === $block['blockName'] ) {
@@ -29,4 +29,4 @@ function wrap_heading_block( $block_content, $block ) {
   }
   return $block_content;
 }
-add_filter( 'render_block', 'wrap_heading_block', 10, 2 );
+add_filter( 'render_block', 'wrap_heading_block', 10, 2 );*/
