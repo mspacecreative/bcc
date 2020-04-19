@@ -3113,6 +3113,7 @@ a {
 
 .attachment article > .attachment:after {
 	content: "\f08e";
+	font-family: fontAwesome;
 	margin-left: 10px;
 	font-size: 14px;
 }
