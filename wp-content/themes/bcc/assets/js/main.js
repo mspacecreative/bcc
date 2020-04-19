@@ -4,6 +4,9 @@
 		
 		'use strict';
 
+		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
+		$('.attachment article > .attachment').attr('target="_blank"');
+		
 		$('.menu-item-has-children').prepend('<span class="toggle-children"><i class="fa fa-angle-down"></i></span>');
 		
 		// REVEAL SECONDARY MENU ON CLICK
