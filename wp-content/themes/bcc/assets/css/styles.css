@@ -3077,7 +3077,7 @@ a {
 	box-shadow: 0 0 15px #d9d9d9;
 }
 
-.inner {
+.inner, .attachment article > .attachment {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 4em;
