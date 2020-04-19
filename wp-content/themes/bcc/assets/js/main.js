@@ -7,7 +7,7 @@
 		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
 		$('.attachment article > .attachment > a').attr('target','_blank');
 		
-		$('.attachment .page-title').each(function() {
+		$('.attachment .page-title, .search .type-attachment > h2 a').each(function() {
 		    var $this = $(this);
 		
 		    $this.text($this.text().replace(/_/g, ' '));
