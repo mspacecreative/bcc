@@ -533,6 +533,9 @@ $linkcolour: #E72F2C;
 	padding-left: 4em;
 	padding-right: 4em;
 }
+.inner.no-top-padding {
+	padding-top: 0;
+}
 %txtaligncenter {
 	text-align: center;
 }

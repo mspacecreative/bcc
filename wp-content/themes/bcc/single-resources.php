@@ -16,7 +16,7 @@
 
 				<?php the_content(); ?>
 				
-				<div class="row_container">
+				<div class="inner no-top-padding">
 					<?php include 'loops/includes/cta-button-relevant-links-loop.php' ?>
 				</div>
 
