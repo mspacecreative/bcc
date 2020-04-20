@@ -3114,8 +3114,12 @@ a {
 	font-size: 20px;
 }
 
-.single-resources .button:before {
+.single-resources .button:after {
 	background-image: none;
+	top: auto;
+	left: auto;
+	height: auto;
+	width: auto;
 }
 
 .attachment article > .attachment:before, .single-resources .button:before {
