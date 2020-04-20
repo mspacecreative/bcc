@@ -14,9 +14,11 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<?php the_content();
+				<?php the_content(); ?>
 				
-				include 'loops/includes/cta-button-relevant-links-loop.php' ?>
+				<div class="row_container">
+					<?php include 'loops/includes/cta-button-relevant-links-loop.php' ?>
+				</div>
 
 			</article>
 			<!-- /article -->
