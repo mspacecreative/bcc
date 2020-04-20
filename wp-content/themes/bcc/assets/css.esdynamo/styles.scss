@@ -543,12 +543,15 @@ $linkcolour: #E72F2C;
 	padding-top: 0;
 	padding-bottom: 0;
 }
-.search .type-attachment > h2:after, .attachment article > .attachment:before {
+.search .type-attachment > h2:after, .attachment article > .attachment:before, .single-resources .button:before {
 	content: "\f1c1";
 	font-family: fontAwesome;
 	font-size: 20px;
 }
-.attachment article > .attachment:before {
+.single-resources .button:before {
+	background-image: none;
+}
+.attachment article > .attachment:before, .single-resources .button:before {
 	margin-right: 10px;
 }
 .attachment article {
@@ -557,7 +560,7 @@ $linkcolour: #E72F2C;
 .search .type-attachment > h2:after {
 	margin-left: 10px;
 }
-.attachment article > .attachment:after {
+.attachment article > .attachment:after, .single-resources .button:after {
 	content: "\f08e";
 	font-family: fontAwesome;
 	margin-left: 10px;
