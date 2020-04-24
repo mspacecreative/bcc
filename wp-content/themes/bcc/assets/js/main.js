@@ -33,7 +33,7 @@
 		$('.video-mp4').each(function() {
 			$('.video-mp4').click(function() {
 				$(this).addClass('hide-overlay');
-				$(this).find('video').trigger('play');
+				//$(this).find('video').trigger('play');
 			});
 		});
 		
