@@ -30,10 +30,10 @@
 			$(this).addClass('yt-videos');
 		});
 		
-		$('.video-mp4').each(function() {
-			$('.video-mp4').click(function() {
-				$(this).addClass('hide-overlay');
-				//$(this).find('video').trigger('play');
+		$('.video_thumb_img').each(function() {
+			$('.video_thumb_img').click(function() {
+				$(this).parent().addClass('hide-overlay');
+				$(this).find('video').trigger('play');
 			});
 		});
 		
