@@ -27,10 +27,6 @@ img {
 	margin-bottom: 3em;
 }
 
-.boxed-link:last-of-type {
-	margin-bottom: 0;
-}
-
 .navbar .search .search-input {
 	width: 100%;
 	box-sizing: border-box;
@@ -59,7 +55,11 @@ img {
 	top: 100%;
 }
 
-#relevant-links .col-container {
+.col-container {
+	padding-bottom: 3rem;
+}
+
+.col-container:last-of-type {
 	padding-bottom: 3rem;
 }
 
