@@ -473,3 +473,4 @@ include 'functions/functions_gutenberg.php';
 include 'functions/functions_tinymce.php';
 include 'functions/functions_block-wrap.php';
 include 'functions/functions_shortcodes.php';
+include 'functions/google-map-filter.php';
