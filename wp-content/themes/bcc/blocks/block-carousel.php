@@ -145,3 +145,4 @@ if ( $hide ) : ?>
 			
 		</div>
 	</div>
+<?php endif; ?>
