@@ -34,7 +34,13 @@ function my_custom_styles( $init_array ) {
 	       	'block' => 'div',
 	       	'classes' => 'centered-title-with-line-rules',
 	       	'wrapper' => true,
-       )
+        ),
+       	array(
+	       	'title' => 'Paragraph with top line rule',
+	       	'block' => 'p',
+	       	'classes' => 'para-top-line-rule',
+	       	'wrapper' => true,
+        )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats'] = json_encode( $style_formats );  

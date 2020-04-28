@@ -3458,6 +3458,11 @@ body {
 	background-color: #3F5BA9;
 }
 
+.para-top-line-rule {
+	padding-top: 20px;
+	border-top: 1px solid #999;
+}
+
 .two_third_one_third_overlay {
 	position: relative;
 }
