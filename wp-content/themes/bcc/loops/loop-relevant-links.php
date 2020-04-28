@@ -15,9 +15,22 @@
 	$loop = new WP_Query( $args );
 	if ( $loop->have_posts() ) : ?>
 			
-	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			
-	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+	<?php while ( $loop->have_posts() ) : $loop->the_post();
+	$columncount = get_field('column_count');
+	
+	if ( $columncount == 'two' ): ?>
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+	
+	<?php elseif ( $columncount == 'three' ): ?>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+	
+	<?php elseif ( $columncount == 'four' ): ?>
+	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+	
+	<?php else : ?>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+	<?php endif; ?>	
+		
 		<div class="boxed-content">
 			<?php
 			$title = get_the_title($post->ID);
