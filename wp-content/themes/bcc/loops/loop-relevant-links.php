@@ -12,23 +12,33 @@
 			)
 		)
 	);
-	$loop = get_posts($args);
-    if ( $loop ) :
-    foreach ( $loop as $post ) : setup_postdata( $post );
+	$loop = new WP_Query( $args );
+	if ( $loop->have_posts() ) : ?>
+			
+	<?php while ( $loop->have_posts() ) : $loop->the_post();
 	
-	$columncount = get_field('column_count', $post->ID);
-	if ( $columncount == 'two' ): ?>
+	if ( function_exists( 'get_field' ) ) {
+		$pid = get_post();
+		if ( has_blocks( $pid_content ) ) {
+			$blocks = parse_blocks( $pid->post_content );
+			foreach ( $blocks as $block ) {
+				if ( $block['blockName'] === 'acf/shortcode' ) {
+					$columncount = get_field('column_count');
+					if ( $columncount == 'two' ): ?>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+					
+					<?php elseif ( $columncount == 'three' ): ?>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+					
+					<?php elseif ( $columncount == 'four' ): ?>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
+					<?php endif;
+				}
+			}
+		}
+	} ?>
+	
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
-	
-	<?php elseif ( $columncount == 'three' ): ?>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
-	
-	<?php elseif ( $columncount == 'four' ): ?>
-	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
-	
-	<?php else : ?>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
-	<?php endif; ?>	
 		
 		<div class="boxed-content">
 			<?php
@@ -47,8 +57,8 @@
 		</div>
 	</div>
 			
-	<?php endforeach;
+	<?php endwhile;
 	
-	endif; wp_reset_postdata(); ?>
+	endif; wp_reset_query(); ?>
 			
 </div>
