@@ -4,6 +4,7 @@ $bgcolor = get_field('background_colour');
 $textcolor = get_field('text_colour');
 $shortcode = get_field('shortcode');
 $rowheading = get_field('row_heading');
+$columncount = get_field('column_count');
 
 if ( $textcolor == 'light' ): 
 
