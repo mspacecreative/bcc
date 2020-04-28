@@ -1,4 +1,3 @@
-<?php $columncount = get_field('column_count', $post->ID); ?>
 <div class="row gutter-space-1">
 			
 	<?php 
@@ -13,11 +12,11 @@
 			)
 		)
 	);
-	$loop = new WP_Query( $args );
-	if ( $loop->have_posts() ) : ?>
-			
-	<?php while ( $loop->have_posts() ) : $loop->the_post();
+	$loop = get_posts($args);
+    if ( $loop ) :
+    foreach ( $loop as $post ) : setup_postdata( $post );
 	
+	$columncount = get_field('column_count', $post->ID);
 	if ( $columncount == 'two' ): ?>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
 	
@@ -48,8 +47,8 @@
 		</div>
 	</div>
 			
-	<?php endwhile;
+	<?php endforeach;
 	
-	endif; wp_reset_query(); ?>
+	endif; wp_reset_postdata(); ?>
 			
 </div>
