@@ -57,7 +57,7 @@
 								<h2><span class="before-title"></span>Resources<span class="after-title"></span></h2>
 							</div>
 							<div class="inner" style="padding-right: 0; padding-left: 0;">
-								<div class="row middle-lg gutter_1">
+								<div class="row middle-lg gutter_1 center-lg center-md center-sm center-xs">
 								<div class="col-lg-3 col-md-3 row col-sm-6 col-xs-12 middle-lg center-lg center-xs mobile-margin-bottom-50">
 									<a href="/resources#videos"><h3 class="icon-title videos">Videos</h3></a>
 								</div>
