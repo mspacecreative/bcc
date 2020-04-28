@@ -37,7 +37,7 @@ function my_custom_styles( $init_array ) {
         ),
        	array(
 	       	'title' => 'Paragraph with top line rule',
-	       	'block' => 'p',
+	       	'block' => 'span',
 	       	'classes' => 'para-top-line-rule',
 	       	'wrapper' => true,
         )
