@@ -29,7 +29,15 @@ if ( $blockanchor && $bgcolor == 'lightblue' ): ?>
 	 	</div>
 	 	<?php endif;
 	 	
-	 	if ( $shortcode ) {
+	 	if ( $columncount == 'two' ) {
+			echo '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		} elseif ( $columncount == 'three' ) {
+			echo '<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $columncount == 'four' ) {
+			echo '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $shortcode ) {
 			echo $shortcode;
 		} ?>
 		
@@ -99,7 +107,15 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
 	 	</div>
 	 	<?php endif;
 	 	
-	 	if ( $shortcode ) {
+	 	if ( $columncount == 'two' ) {
+			echo '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		} elseif ( $columncount == 'three' ) {
+			echo '<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $columncount == 'four' ) {
+			echo '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $shortcode ) {
 			echo $shortcode;
 		} ?>
 		
