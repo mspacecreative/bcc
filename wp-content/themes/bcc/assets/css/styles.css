@@ -3495,6 +3495,14 @@ body {
 	margin-top: auto;
 }
 
+#relevant-links .boxed-link p {
+	margin: 0 0 15px;
+}
+
+#relevant-links .boxed-link p:last-of-type {
+	margin-bottom: 0;
+}
+
 .pdf_dl {
 	text-decoration: none;
 }
