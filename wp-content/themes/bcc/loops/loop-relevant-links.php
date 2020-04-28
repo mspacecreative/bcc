@@ -1,3 +1,4 @@
+<?php $columncount = get_field('column_count', $post->ID); ?>
 <div class="row gutter-space-1">
 			
 	<?php 
@@ -16,7 +17,6 @@
 	if ( $loop->have_posts() ) : ?>
 			
 	<?php while ( $loop->have_posts() ) : $loop->the_post();
-	$columncount = get_field('column_count', $post->ID);
 	
 	if ( $columncount == 'two' ): ?>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">
