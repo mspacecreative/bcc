@@ -55,7 +55,10 @@ img {
 	padding-bottom: 3rem;
 }
 
-.col-container:last-of-type {
+.col-lg-4:nth-child(3n+1):nth-last-child(-n+3),
+.col-lg-4:nth-child(3n+1):nth-last-child(-n+3) ~ .col-lg-4,
+.col-md-4:nth-child(3n+1):nth-last-child(-n+3),
+.col-md-4:nth-child(3n+1):nth-last-child(-n+3) ~ .col-md-4 {
 	padding-bottom: 0;
 }
 
