@@ -4,6 +4,7 @@ $bgcolor = get_field('background_colour');
 $textcolor = get_field('text_colour');
 $shortcode = get_field('shortcode');
 $rowheading = get_field('row_heading');
+$columncount = get_field('column_count');
 
 if ( $textcolor == 'light' ): 
 
@@ -59,7 +60,18 @@ if ( $blockanchor && $bgcolor == 'lightblue' ) : ?>
 	 	</div>
 	 	<?php endif;
 	 	
-	 	if ( $shortcode ) {
+	 	if ( $shortcode && $columncount == 'two' ) {
+			echo '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		} elseif ( $shortcode && $columncount == 'three' ) {
+			echo '<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $shortcode && $columncount == 'four' ) {
+			echo '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $shortcode && $columncount ) {
+			echo '<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25 col-container boxed-link">' . $shortcode;
+		}
+		elseif ( $shortcode ) {
 			echo $shortcode;
 		} ?>
 		
