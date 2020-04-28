@@ -379,7 +379,7 @@ form .wpcf7-submit {
 	margin-bottom: 15px;
 }
 
-.boxed-link .button:last-child {
+.boxed-link p:last-of-type > .button {
 	margin-bottom: 0;
 }
 
