@@ -1,3 +1,4 @@
+<?php $columncount = get_field('column_count'); ?>
 <div class="row gutter-space-1">
 			
 	<?php 
