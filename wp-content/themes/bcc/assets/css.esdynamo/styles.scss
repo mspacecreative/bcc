@@ -1287,10 +1287,10 @@ video, iframe {
 }
 
 @media (min-width: 981px) {
-	#relevant-links .col-container:nth-child(3n+1):nth-last-child(-n+3),
+	/*#relevant-links .col-container:nth-child(3n+1):nth-last-child(-n+3),
   	#relevant-links .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container {
 	    padding-bottom: 0;
-	}
+	}*/
 	
 	.two_third_img, .full_img {
 		height: 500px;
