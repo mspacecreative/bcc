@@ -5,10 +5,10 @@
 							<h3>Disclaimer</h3>
 							<p>The Breastfeeding Committee for Canada makes every effort to ensure that other websites directly linked to our own include information compatible with our mission and purpose. We can only be responsible for information contained within our own web pages.</p>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25">
+						<!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mobile-margin-bottom-25">
 							<h3>Subscribe to our newsletter</h3>
 							<?php echo do_shortcode('[contact-form-7 id="585" title="List Builder Form"]'); ?>
-						</div>
+						</div>-->
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 							<h3>Get in touch</h3>
 							<p>
