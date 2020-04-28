@@ -2941,6 +2941,7 @@ form .wpcf7-submit {
 	transition: 0.25s ease-in-out;
 	margin-bottom: 15px;
 	display: inline-block;
+	margin-top: 0;
 }
 
 .boxed-link a:hover {

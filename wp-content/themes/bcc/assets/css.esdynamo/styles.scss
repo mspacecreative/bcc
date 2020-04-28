@@ -376,7 +376,7 @@ form .wpcf7-submit {
 	background-color: #fff;
 	box-shadow: 0 0 8px #c9c9c9;
 	transition: 0.25s ease-in-out;
-	margin-top: 10px
+	margin-bottom: 15px;
 }
 
 .boxed-link a.pdf_dl {
@@ -386,6 +386,7 @@ form .wpcf7-submit {
 	transition: 0.25s ease-in-out;
 	margin-bottom: 15px;
 	display: inline-block;
+	margin-top: 0;
 }
 
 .boxed-link a:hover {
