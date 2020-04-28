@@ -893,7 +893,7 @@ body {
 #relevant-links .boxed-link p {
 	margin: 0 0 15px;
 }
-#relevant-links .boxed-link p:last-of-type {
+#relevant-links .boxed-link p:last-of-type, #relevant-links .boxed-link p:last-of-type > a {
 	margin-bottom: 0;
 }
 .pdf_dl {
