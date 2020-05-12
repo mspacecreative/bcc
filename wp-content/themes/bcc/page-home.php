@@ -16,14 +16,18 @@
 					<!-- inner -->
 					<div class="inner txtaligncenter">
 						
-						<?php 
+						<div class="tagline">
+							<h1><?php get_bloginfo('description') ?></h1>
+						</div>
+						<!--<?php 
 						$tagline = get_field('tagline', 'options');
 						if ( $tagline ) {
 							echo '<div class="tagline">
 								  	<h1>' . $tagline . '</h1>
 						         </div>';
-						}
+						}-->
 						
+						<?php 
 						$loop = new WP_Query( array( 
 							'post_type' => 'news',
 							'posts_per_page' => -1,
