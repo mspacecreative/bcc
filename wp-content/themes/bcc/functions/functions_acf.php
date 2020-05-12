@@ -203,3 +203,10 @@ function my_acf_block_render_callback( $block ) {
 	    $className .= ' align' . $block['align'];
 	}
 }
+
+// OPTIONS PAGE
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page( 'Theme Settings' );
+	
+}

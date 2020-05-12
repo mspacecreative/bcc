@@ -12,18 +12,18 @@
 				<div class="splash light-overlay">
 					<div class="splash-static-container">
 						<img data-object-fit="cover" src="https://annualreport.iwk.nshealth.ca/wp-content/uploads/2019/06/breastfeeding.jpg" class="absolute_img">
-						<!--<video data-object-fit="cover" width="1920" height="1080" preload="auto" poster="https://annualreport.iwk.nshealth.ca/wp-content/uploads/2019/06/breastfeeding.jpg" autoplay="" playsinline="" muted="">
-							<source src="https://cdn.mspacecreative.com/videos/breastfeeding.mp4" type="video/mp4">
-						</video>-->
 					</div>
 					<!-- inner -->
 					<div class="inner txtaligncenter">
-						<!-- Example row of columns -->
-						<div class="tagline">
-							<h1>The National Authority for Baby-Friendly Initiative</h1>
-						</div>
 						
 						<?php 
+						$tagline = get_field('tagline', 'options');
+						if ( $tagline ) {
+							echo '<div class="tagline">
+								  	<h1>' . $tagline . '</h1>
+						         </div>';
+						}
+						
 						$loop = new WP_Query( array( 
 							'post_type' => 'news',
 							'posts_per_page' => -1,
