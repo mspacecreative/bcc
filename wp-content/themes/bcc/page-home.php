@@ -17,7 +17,7 @@
 					<div class="inner txtaligncenter">
 						
 						<?php 
-						$tagline = get_bloginfo('description');
+						$tagline = get_bloginfo('description', $post->ID);
 						if ( $tagline ) {
 							echo '<div class="tagline">
 									<h1>' . $tagline . '</h1>
