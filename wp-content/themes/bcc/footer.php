@@ -18,7 +18,7 @@
 				<div class="inner_no_top_bottom_padding">
 					<p class="credits">&copy; <?php echo date('Y '); echo bloginfo('title'); ?>. 
 					<?php if ( get_field('footer_credit', 'options') ):
-						the_field('footer_credit');
+						the_field('footer_credit', 'options');
 					endif; ?>
 					</p>
 				</div>
