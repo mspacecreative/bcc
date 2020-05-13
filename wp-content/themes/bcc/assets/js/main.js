@@ -5,8 +5,9 @@
 		'use strict';
 
 		// FIND AND REPLACE ENGLISH FOOTER CREDIT WITH FRENCH
+		var credits = $('.credits');
 		if ( $('html').is(':lang(fr-FR)') ) {
-			$('.credits').html($(this).html().replace('All rights reserved', 'Tous droits réservés'));
+			credits.html($(this).credits.replace('All rights reserved', 'Tous droits réservés'));
 		}
 		
 		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
