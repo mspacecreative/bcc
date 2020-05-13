@@ -16,7 +16,11 @@
 			</footer>
 			<div class="footer-bottom">	
 				<div class="inner_no_top_bottom_padding">
-					<p class="credits">&copy; <?php echo date('Y '); echo bloginfo('title'); ?>. All rights reserved.</p>
+					<p class="credits">&copy; <?php echo date('Y '); echo bloginfo('title'); ?>. 
+					<?php if ( get_field('footer_credit', 'options') ):
+						the_field('footer_credit');
+					endif; ?>
+					</p>
 				</div>
 			</div>
 			
