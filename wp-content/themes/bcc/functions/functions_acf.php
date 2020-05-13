@@ -8,6 +8,19 @@ function my_acf_init() {
 		
 		// register splash block
 		acf_register_block(array(
+			'name'				=> 'three-col-links',
+			'title'				=> __('Three columns with links'),
+			'description'		=> __('Display titles and links to pages'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'images-alt',
+			'keywords'			=> array( 'titles', 'page links' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
+		// register splash block
+		acf_register_block(array(
 			'name'				=> 'page-feature',
 			'title'				=> __('Page Feature'),
 			'description'		=> __('Image and text overlay block'),
