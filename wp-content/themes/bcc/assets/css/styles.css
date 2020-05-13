@@ -3526,6 +3526,10 @@ body {
 	transition: 0.25s ease-in-out;
 }
 
+.pdf_dl.light:before {
+	color: #F58258;
+}
+
 .section {
 	position: relative;
 }
