@@ -5,12 +5,13 @@
 		'use strict';
 
 		// FIND AND REPLACE ENGLISH FOOTER CREDIT WITH FRENCH
-		/*var credits = $('.credits');
+		var credits = $('.credits');
 		if ( $('html').is(':lang(fr-FR)') ) {
-			credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
-		} else {
-			credits.html(credits.html().replace('All rights reserved', 'All rights reserved'));
-		}*/
+			$('body').addClass('french-version');
+			if ( $('body').hasClass('french-version') ) {
+				credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
+			}
+		}
 		
 		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
 		$('.attachment article > .attachment > a').attr('target','_blank');
