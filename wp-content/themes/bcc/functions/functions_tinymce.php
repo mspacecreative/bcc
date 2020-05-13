@@ -12,6 +12,12 @@ function my_custom_styles( $init_array ) {
             'wrapper' => true,
         ),  
         array(  
+            'title' => 'Light Download PDF Button',  
+            'block' => 'a',  
+            'classes' => 'pdf_dl light',
+            'wrapper' => true,
+        ),
+        array(  
             'title' => 'CTA Button',  
             'block' => 'a',  
             'classes' => 'button',
