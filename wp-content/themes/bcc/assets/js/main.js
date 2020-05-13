@@ -8,6 +8,8 @@
 		var credits = $('.credits');
 		if ( $('html').is(':lang(fr-FR)') ) {
 			credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
+		} else {
+			return false;
 		}
 		
 		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
