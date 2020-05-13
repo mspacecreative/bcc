@@ -197,22 +197,22 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
-    // Define Sidebar Widget Area 1
+    // Define Sidebar Footer Left
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
+        'name' => __('Footer Left Column', 'html5blank'),
+        'description' => __('Content to display in left column', 'html5blank'),
+        'id' => 'footer-area-left',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
 
-    // Define Sidebar Widget Area 2
+    // Define Sidebar Footer Right
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
+        'name' => __('Footer Right Column', 'html5blank'),
+        'description' => __('Content to display in right column', 'html5blank'),
+        'id' => 'footer-area-right',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
