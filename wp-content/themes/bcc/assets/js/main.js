@@ -10,6 +10,7 @@
 			$('body').addClass('french-version');
 			if ( $('body').hasClass('french-version') ) {
 				credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
+				$("form .search input.search-input").attr("placeholder", "taper quelque chose");
 			}
 		}
 		
