@@ -3607,6 +3607,7 @@ body .desktop-menu-toggle .hamburger-inner, body .desktop-menu-toggle .hamburger
 	position: relative;
 	height: 0;
 	padding-bottom: 56.25%;
+	background-color: #000;
 }
 
 .video-container.hide-overlay:after, .video-container.hide-overlay:before, .video-container.hide-overlay .video_thumb_img {

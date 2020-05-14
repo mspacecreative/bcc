@@ -39,8 +39,8 @@
 			$(this).addClass('yt-videos');
 		});
 		
-		$('.video-mp4').each(function() {
-			$('.video-mp4').click(function() {
+		$('.video-mp4, .video-vimeo').each(function() {
+			$('.video-mp4, .video-vimeo').click(function() {
 				$(this).addClass('hide-overlay');
 				//$(this).find('video').trigger('play');
 			});
