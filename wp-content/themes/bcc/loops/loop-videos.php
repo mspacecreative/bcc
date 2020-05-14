@@ -12,10 +12,6 @@ $args = array(
 );
 $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) : ?>
-	
-<div class="inner no-top-bottom-padding centered-title-with-line-rules">
-	<h2 class="bottom-margin-50">Videos</h2>
-</div>
 		
 <div class="row gutter-space-1 content_grid video-media">
 <?php while ( $loop->have_posts() ) : $loop->the_post();
