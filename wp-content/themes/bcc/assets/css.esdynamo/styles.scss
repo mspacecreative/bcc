@@ -27,6 +27,10 @@ img {
 	width: calc(100% - 26px);
 }
 
+.menu-item-has-children a li a {
+	width: 100%;
+}
+
 .navbar .search .search-input {
 	width: 100%;
 	box-sizing: border-box;
