@@ -14,7 +14,8 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 // CHANGE MAP TO FRENCH
 
-if (pll_current_language() == 'fr-FR') {
+$currentlang = get_bloginfo('language');
+if ( $currentlang == 'fr-FR' ) {
 	add_action( 'wp_enqueue_scripts', function() {
 		$language = 'fr-FR';
 	
