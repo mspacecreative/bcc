@@ -400,10 +400,10 @@ if ( $loop->have_posts() ) : ?>
 				$phone = get_sub_field('phone_number', $post->ID);
 				
 				if ( $weblink ) {
-					echo '<a href="' . $weblink . '" target="_blank">VISIT WEBSITE</a>';
+					echo '<a class="gm-website" href="' . $weblink . '" target="_blank">VISIT WEBSITE</a>';
 				} 
 				if ( $phone ) {
-					echo '<a href="tel:+1' . $phone . '">CALL</a>';
+					echo '<a class="gm-phone" href="tel:+1' . $phone . '">CALL</a>';
 				}
 				
 				endwhile;

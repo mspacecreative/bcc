@@ -4,6 +4,15 @@
 		
 		'use strict';
 
+		// CHANGE GOOGLE MAP BUTTONS TO FRENCH
+		if ( $('html').attr('lang') == 'fr-FR' ) {
+			$('.info_content').each(function() {
+				$(this).find('.gm-website').each(function() {
+					('.gm-website').html('.gm-website').html().replace('Visit Website', 'Call'));
+				});
+			});
+		}
+		
 		// FIND AND REPLACE ENGLISH FOOTER CREDIT WITH FRENCH
 		var credits = $('.credits');
 		if ( $('html').is(':lang(fr-FR)') ) {
