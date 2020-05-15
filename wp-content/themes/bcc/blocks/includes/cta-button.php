@@ -45,16 +45,17 @@ if ( have_rows('cta_links') ):
 				$pagelink = get_sub_field('page');
 				$pdf = get_sub_field('pdf');
 				$linktype = get_sub_field('link_type');
+				$inlinelinks = get_sub_field('inline_links');
 								
-				if ( $linktype == 'internal' ) {
-					echo '<p class="inline-links"><a class="button" href="' . $pagelink . '">' . $linklabel . '</a></p>';
-				} elseif ( $linktype == 'external' ) {
-					echo '<p class="inline-links"><a class="button" href="' . $exturl . '" target="_blank">' . $linklabel . '</a></p>';
-				} elseif ( $linktype == 'pdf' ) {
-					echo '<p class="inline-links"><a class="pdf_dl" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
-				}
-				
-				else {
+				if ( $inlinelinks ) {
+					if ( $linktype == 'internal' ) {
+						echo '<p class="inline-links"><a class="button" href="' . $pagelink . '">' . $linklabel . '</a></p>';
+					} elseif ( $linktype == 'external' ) {
+						echo '<p class="inline-links"><a class="button" href="' . $exturl . '" target="_blank">' . $linklabel . '</a></p>';
+					} elseif ( $linktype == 'pdf' ) {
+						echo '<p class="inline-links"><a class="pdf_dl" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
+					}
+				} else {
 					if ( $linktype == 'internal' ) {
 						echo '<p><a class="button" href="' . $pagelink . '">' . $linklabel . '</a></p>';
 					} elseif ( $linktype == 'external' ) {
