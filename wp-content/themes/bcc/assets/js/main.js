@@ -4,15 +4,6 @@
 		
 		'use strict';
 
-		// CHANGE GOOGLE MAP BUTTONS TO FRENCH
-		if ( $('html').attr('lang') == 'fr-FR' ) {
-			$('.info_content').each(function() {
-				$('.info_content').find('.gm-website').each(function() {
-					$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Visitez le site web'));
-				});
-			});
-		}
-		
 		// FIND AND REPLACE ENGLISH FOOTER CREDIT WITH FRENCH
 		var credits = $('.credits');
 		if ( $('html').is(':lang(fr-FR)') ) {
@@ -21,6 +12,12 @@
 				credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
 				$(".search-input").attr("placeholder", "taper quelque chose…");
 			}
+			
+			$('.info_content').each(function() {
+				$('.info_content').find('.gm-website').each(function() {
+					$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Visitez le site web'));
+				});
+			});
 		}
 		
 		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
