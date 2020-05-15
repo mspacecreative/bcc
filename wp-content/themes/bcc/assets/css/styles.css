@@ -2600,7 +2600,7 @@ img {
 	width: calc(100% - 26px);
 }
 
-.menu-item-has-children a li a {
+.menu-item-has-children a .sub-menu a {
 	width: 100%;
 }
 
