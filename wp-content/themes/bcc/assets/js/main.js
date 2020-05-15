@@ -5,15 +5,12 @@
 		'use strict';
 
 		// FIND AND REPLACE ENGLISH FOOTER CREDIT WITH FRENCH
-		var credits = $('.credits'),
-		  gmWebsite = $('.gm-website');
+		var credits = $('.credits');
 		if ( $('html').is(':lang(fr-FR)') ) {
 			$('body').addClass('french-version');
 			if ( $('body').hasClass('french-version') ) {
 				credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
 				$(".search-input").attr("placeholder", "taper quelque chose…");
-				
-				gmWebsite.html(gmWebsite.html().replace('Visit Website', 'Visitez le site web'));
 			}
 		}
 		
