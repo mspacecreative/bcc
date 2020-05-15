@@ -6,7 +6,6 @@ $bgcolor = get_field('background_colour');
 $textcolor = get_field('text_colour');
 $boxedcontent = get_field('boxed_content');
 $blockanchor = get_field('block_anchor');
-$inlinelinks = get_sub_field('inline_links');
 
 if ( $columns == 'two' ):
 
@@ -46,6 +45,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 			
 			<?php while( have_rows('columns_grid') ): the_row();
 			
+			$inlinelinks = get_sub_field('inline_links');
 			if ( $inlinelinks ):
 			
 			if ( $boxedcontent ): ?>
@@ -166,6 +166,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 			
 			<?php while( have_rows('columns_grid') ): the_row();
 			
+			$inlinelinks = get_sub_field('inline_links');
 			if ( $inlinelinks ):
 			
 			if ( $boxedcontent ): ?>
@@ -286,6 +287,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 			
 			<?php while( have_rows('columns_grid') ): the_row();
 			
+			$inlinelinks = get_sub_field('inline_links');
 			if ( $inlinelinks ):
 			
 			if ( $boxedcontent ): ?>
