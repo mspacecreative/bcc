@@ -13,11 +13,7 @@
 				$(".search-input").attr("placeholder", "taper quelque chose…");
 			}
 			
-			$('.info_content').each(function() {
-				$('.info_content').find('.gm-website').each(function() {
-					$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Visitez le site web'));
-				});
-			});
+			$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Visitez le site web'));
 		}
 		
 		// ADD TARGET BLANK ATTRIBUTE TO PDF LINKS IN SEARCH RESULTS
