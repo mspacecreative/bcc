@@ -12,7 +12,9 @@
 				credits.html(credits.html().replace('All rights reserved', 'Tous droits réservés'));
 				$(".search-input").attr("placeholder", "taper quelque chose…");
 			}
-			
+		}
+		
+		if ( $('html').is(':lang(fr-FR)') ) {
 			$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Visitez le site web'));
 		}
 		
