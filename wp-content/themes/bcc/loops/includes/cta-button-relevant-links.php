@@ -10,5 +10,5 @@ if ( $linktype == 'internal' ) {
 } elseif ( $linktype == 'external' ) {
 	echo '<p><a class="button" href="' . $exturl . '" target="_blank">' . $linklabel . '</a></p>';
 } elseif ( $linktype == 'pdf' ) {
-	echo '<p><a class="button" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
+	echo '<p><a class="pdf_dl" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
 }
