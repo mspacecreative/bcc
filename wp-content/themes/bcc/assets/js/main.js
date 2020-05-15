@@ -7,8 +7,8 @@
 		// CHANGE GOOGLE MAP BUTTONS TO FRENCH
 		if ( $('html').attr('lang') == 'fr-FR' ) {
 			$('.info_content').each(function() {
-				$(this).find('.gm-website').each(function() {
-					('.gm-website').html('.gm-website').html().replace('Visit Website', 'Call'));
+				$('.info_content').find('.gm-website').each(function() {
+					$('.gm-website').html('.gm-website').html().replace('Visit Website', 'Call'));
 				});
 			});
 		}
