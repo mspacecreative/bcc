@@ -43,6 +43,9 @@ if ( $blockanchor && $bgcolor == 'lightgrey' && $textcolor == 'light' ): ?>
 <?php elseif ( $bgcolor == 'lightgrey' ): ?>
 <div class="section light_grey_bg">
 
+<?php elseif ( $blockanchor ): ?>
+<div id="<?php echo $blockanchor ?>" class="section">
+
 <?php else : ?>
 <div class="section">
 
