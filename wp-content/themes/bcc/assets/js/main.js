@@ -8,7 +8,7 @@
 		if ( $('html').attr('lang') == 'fr-FR' ) {
 			$('.info_content').each(function() {
 				$('.info_content').find('.gm-website').each(function() {
-					$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Call'));
+					$('.gm-website').html($('.gm-website').html().replace('Visit Website', 'Visitez le site web'));
 				});
 			});
 		}
