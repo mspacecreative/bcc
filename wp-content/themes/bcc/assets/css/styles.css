@@ -2960,9 +2960,9 @@ form .wpcf7-submit {
 }
 
 .boxed-link a.pdf_dl {
-	padding: 0;
-	background-color: transparent;
-	box-shadow: none;
+	padding: 15px;
+	  /*background-color: transparent;
+		box-shadow: none;*/
 	transition: 0.25s ease-in-out;
 	margin-bottom: 15px;
 	display: inline-block;
