@@ -18,7 +18,7 @@ if ( have_rows('cta_links') ):
 				} elseif ( $linktype == 'external' ) {
 					echo '<p class="inline-links"><a class="button" href="' . $exturl . '" target="_blank">' . $linklabel . '</a></p>';
 				} elseif ( $linktype == 'pdf' ) {
-					echo '<p class="inline-links"><a class="button" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
+					echo '<p class="inline-links"><a class="pdf_dl" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
 				}
 				
 				else {
@@ -51,7 +51,7 @@ if ( have_rows('cta_links') ):
 				} elseif ( $linktype == 'external' ) {
 					echo '<p class="inline-links"><a class="button" href="' . $exturl . '" target="_blank">' . $linklabel . '</a></p>';
 				} elseif ( $linktype == 'pdf' ) {
-					echo '<p class="inline-links"><a class="button" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
+					echo '<p class="inline-links"><a class="pdf_dl" href="' . $pdf . '" target="_blank">' . $linklabel . '</a></p>';
 				}
 				
 				else {
