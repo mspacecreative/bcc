@@ -6,6 +6,7 @@ $bgcolor = get_field('background_colour');
 $textcolor = get_field('text_colour');
 $boxedcontent = get_field('boxed_content');
 $blockanchor = get_field('block_anchor');
+$inlinelinks = get_sub_field('inline_links');
 
 if ( $columns == 'two' ):
 
@@ -45,6 +46,8 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 			
 			<?php while( have_rows('columns_grid') ): the_row();
 			
+			if ( $inlinelinks ):
+			
 			if ( $boxedcontent ): ?>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mobile-margin-bottom-25">
 				<div class="boxed-content">
@@ -59,7 +62,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 						echo $content;
 					}
 					
-					include 'includes/cta-button.php'; ?>
+					include 'includes/cta-button-inline.php'; ?>
 				</div>
 			</div>
 			
@@ -76,11 +79,50 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					echo $content;
 				}
 					
-				include 'includes/cta-button.php'; ?>
+				include 'includes/cta-button-inline.php'; ?>
 			</div>
-			<?php endif; ?>
+			<?php endif;
 			
-			<?php endwhile; ?>
+			else :
+			
+			if ( $boxedcontent ): ?>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mobile-margin-bottom-25">
+				<div class="boxed-content">
+					<?php
+					$heading = get_sub_field('heading');
+					$content = get_sub_field('content');
+					
+					if ( $heading ) {
+						echo '<h4>' . $heading . '</h4>';
+					}
+					if ( $content ) {
+						echo $content;
+					}
+					
+					include 'includes/cta-button-stacked.php'; ?>
+				</div>
+			</div>
+			
+			<?php else : ?>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mobile-margin-bottom-25">
+				<?php
+				$heading = get_sub_field('heading');
+				$content = get_sub_field('content');
+					
+				if ( $heading ) {
+					echo '<h4>' . $heading . '</h4>';
+				}
+				if ( $content ) {
+					echo $content;
+				}
+					
+				include 'includes/cta-button-stacked.php'; ?>
+			</div>
+			<?php endif;
+			
+			endif;
+			
+			endwhile; ?>
 			
 		</div>
 		
@@ -124,6 +166,8 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 			
 			<?php while( have_rows('columns_grid') ): the_row();
 			
+			if ( $inlinelinks ):
+			
 			if ( $boxedcontent ): ?>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25">
 				<div class="boxed-content">
@@ -138,7 +182,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 						echo $content;
 					}
 					
-					include 'includes/cta-button.php'; ?>
+					include 'includes/cta-button-inline.php'; ?>
 				</div>
 			</div>
 			
@@ -155,11 +199,50 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					echo $content;
 				}
 					
-				include 'includes/cta-button.php'; ?>
+				include 'includes/cta-button-inline.php'; ?>
 			</div>
-			<?php endif; ?>
+			<?php endif;
 			
-			<?php endwhile; ?>
+			else :
+			
+			if ( $boxedcontent ): ?>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25">
+				<div class="boxed-content">
+					<?php
+					$heading = get_sub_field('heading');
+					$content = get_sub_field('content');
+					
+					if ( $heading ) {
+						echo '<h4>' . $heading . '</h4>';
+					}
+					if ( $content ) {
+						echo $content;
+					}
+					
+					include 'includes/cta-button-stacked.php'; ?>
+				</div>
+			</div>
+			
+			<?php else : ?>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobile-margin-bottom-25">
+				<?php
+				$heading = get_sub_field('heading');
+				$content = get_sub_field('content');
+					
+				if ( $heading ) {
+					echo '<h4>' . $heading . '</h4>';
+				}
+				if ( $content ) {
+					echo $content;
+				}
+					
+				include 'includes/cta-button-stacked.php'; ?>
+			</div>
+			<?php endif;
+			
+			endif;
+			
+			endwhile; ?>
 			
 		</div>
 		
@@ -203,6 +286,8 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 			
 			<?php while( have_rows('columns_grid') ): the_row();
 			
+			if ( $inlinelinks ):
+			
 			if ( $boxedcontent ): ?>
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mobile-margin-bottom-25">
 				<div class="boxed-content">
@@ -217,7 +302,7 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 						echo $content;
 					}
 					
-					include 'includes/cta-button.php'; ?>
+					include 'includes/cta-button-inline.php'; ?>
 				</div>
 			</div>
 			
@@ -234,11 +319,50 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					echo $content;
 				}
 					
-				include 'includes/cta-button.php'; ?>
+				include 'includes/cta-button-inline.php'; ?>
 			</div>
-			<?php endif; ?>
+			<?php endif;
 			
-			<?php endwhile; ?>
+			else : 
+			
+			if ( $boxedcontent ): ?>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mobile-margin-bottom-25">
+				<div class="boxed-content">
+					<?php
+					$heading = get_sub_field('heading');
+					$content = get_sub_field('content');
+					
+					if ( $heading ) {
+						echo '<h4>' . $heading . '</h4>';
+					}
+					if ( $content ) {
+						echo $content;
+					}
+					
+					include 'includes/cta-button-stacked.php'; ?>
+				</div>
+			</div>
+			
+			<?php else : ?>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mobile-margin-bottom-25">
+				<?php
+				$heading = get_sub_field('heading');
+				$content = get_sub_field('content');
+					
+				if ( $heading ) {
+					echo '<h4>' . $heading . '</h4>';
+				}
+				if ( $content ) {
+					echo $content;
+				}
+					
+				include 'includes/cta-button-stacked.php'; ?>
+			</div>
+			<?php endif;
+			
+			endif;
+			
+			endwhile; ?>
 			
 		</div>
 		
