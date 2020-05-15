@@ -399,11 +399,21 @@ if ( $loop->have_posts() ) : ?>
 				$weblink = get_sub_field('website_link', $post->ID);
 				$phone = get_sub_field('phone_number', $post->ID);
 				
-				if ( $weblink ) {
-					echo '<a class="gm-website" href="' . $weblink . '" target="_blank">VISIT WEBSITE</a>';
-				} 
-				if ( $phone ) {
-					echo '<a class="gm-phone" href="tel:+1' . $phone . '">CALL</a>';
+				$currentlang = get_bloginfo('language');
+				if ( $currentlang == 'en-CA' ) {
+					if ( $weblink ) {
+						echo '<a class="gm-website" href="' . $weblink . '" target="_blank">VISIT WEBSITE</a>';
+					} 
+					if ( $phone ) {
+						echo '<a class="gm-phone" href="tel:+1' . $phone . '">CALL</a>';
+					}
+				} elseif ( $currentlang == 'fr-FR' ) {
+					if ( $weblink ) {
+						echo '<a class="gm-website" href="' . $weblink . '" target="_blank">Visitez le site web</a>';
+					} 
+					if ( $phone ) {
+						echo '<a class="gm-phone" href="tel:+1' . $phone . '">Appel</a>';
+					}
 				}
 				
 				endwhile;
