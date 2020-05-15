@@ -23,6 +23,10 @@ img {
 	display: block;
 }
 
+.menu-item-has-children a {
+	width: calc(100% - 26px);
+}
+
 .navbar .search .search-input {
 	width: 100%;
 	box-sizing: border-box;
