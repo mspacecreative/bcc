@@ -643,7 +643,7 @@ $linkcolour: #E72F2C;
 	font-family: fontAwesome;
 	margin-right: 10px;
 }
-.inner, .attachment article > .attachment {
+.inner, .attachment article > .attachment, .single article {
 	@extend %inner;
 }
 .inner_no_top_bottom_padding {
