@@ -1,8 +1,12 @@
 <?php 
-add_filter('relevanssi_modify_wp_query', 'rlv_remove_polylang');
-function rlv_remove_polylang($q) {
-	$q->tax_query = "";
-	$q->set('taxonomy', null);
-	$q->set('term', null);
-	return $q;
+add_action( 'init', 'update_my_custom_type', 99 );
+
+function update_my_custom_type() {
+    global $wp_post_types;
+
+    if ( post_type_exists( 'hospital_facility' ) ) {
+
+        // exclude from search results
+        $wp_post_types['hospital_facility']->exclude_from_search = true;
+    }
 }
