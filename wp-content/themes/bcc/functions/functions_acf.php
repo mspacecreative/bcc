@@ -149,19 +149,6 @@ function my_acf_init() {
 			'supports'			=> array( 'mode' => false ),
 		));
 		
-		// register column block
-		acf_register_block(array(
-			'name'				=> 'columns',
-			'title'				=> __('Variable Columns Section'),
-			'description'		=> __('Displays variable column layout'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formatting',
-			'icon'				=> 'text',
-			'keywords'			=> array( 'columns', 'variable' ),
-			'mode'				=> 'edit',
-			'supports'			=> array( 'mode' => false ),
-		));
-		
 		// register single testimonial block
 		acf_register_block(array(
 			'name'				=> 'testimonial-single',
