@@ -13,19 +13,7 @@ function wrap_classic_block( $block_content, $block ) {
 }
 add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
 
-add_filter( 'allowed_block_types', 'misha_allowed_block_types' );
- 
-function misha_allowed_block_types( $allowed_blocks ) {
- 
-	return array(
-		'core/image',
-		'core/paragraph',
-		'core/heading',
-		'core/list'
-	);
-}
-
-/*add_filter( 'render_block', function( $block_content, $block ) {
+add_filter( 'render_block', function( $block_content, $block ) {
     // Target core/* and core-embed/* blocks.
     if ( preg_match( '~^core/|core-embed/~', $block['blockName'] ) ) {
        $block_content = sprintf( '<div class="para-block-wrap no-top-bottom-padding inner">%s</div>', $block_content );
@@ -33,7 +21,7 @@ function misha_allowed_block_types( $allowed_blocks ) {
     return $block_content;
 }, PHP_INT_MAX - 1, 2 );
 
-function wrap_heading_block( $block_content, $block ) {
+/*function wrap_heading_block( $block_content, $block ) {
   if ( 'core/heading' === $block['blockName'] ) {
     $block_content = '<div class="inner">' . $block_content . '</div>';
   } elseif ( 'core/paragraph' === $block['blockName'] ) {
