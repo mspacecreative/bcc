@@ -23,6 +23,10 @@ img {
 	display: block;
 }
 
+.admin-bar .navbar, .admin-bar .branding-container {
+	margin-top: 32px;
+}
+
 .menu-item-has-children a {
 	width: calc(100% - 26px);
 }
