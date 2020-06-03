@@ -22,7 +22,13 @@ function my_custom_styles( $init_array ) {
             'block' => 'a',  
             'classes' => 'button',
             'wrapper' => true,
-        ),  
+        ),
+        array(  
+            'title' => 'Light CTA Button',  
+            'block' => 'a',  
+            'classes' => 'button light',
+            'wrapper' => true,
+        ), 
         array(  
             'title' => 'Inline CTA Button',  
             'block' => 'span',  
