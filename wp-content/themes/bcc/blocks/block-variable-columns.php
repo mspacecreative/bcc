@@ -61,8 +61,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					if ( $content ) {
 						echo $content;
 					}
-					
-					include 'includes/cta-button-inline.php'; ?>
+					if ( $textcolor == 'light' ) {
+						include 'includes/cta-button-inline-light.php';
+					} else {
+						include 'includes/cta-button-inline.php';
+					} ?>
 				</div>
 			</div>
 			
@@ -78,8 +81,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 				if ( $content ) {
 					echo $content;
 				}
-					
-				include 'includes/cta-button-inline.php'; ?>
+				if ( $textcolor == 'light' ) {
+					include 'includes/cta-button-inline-light.php';
+				} else {
+					include 'includes/cta-button-inline.php';
+				} ?>
 			</div>
 			<?php endif;
 			
@@ -98,8 +104,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					if ( $content ) {
 						echo $content;
 					}
-					
-					include 'includes/cta-button-stacked.php'; ?>
+					if ( $textcolor == 'light' ) {
+						include 'includes/cta-button-stacked-light.php';
+					} else {
+						include 'includes/cta-button-stacked.php';
+					} ?>
 				</div>
 			</div>
 			
@@ -115,8 +124,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 				if ( $content ) {
 					echo $content;
 				}
-					
-				include 'includes/cta-button-stacked.php'; ?>
+				if ( $textcolor == 'light' ) {
+					include 'includes/cta-button-stacked-light.php';
+				} else {
+					include 'includes/cta-button-stacked.php';
+				} ?>
 			</div>
 			<?php endif;
 			
@@ -182,8 +194,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					if ( $content ) {
 						echo $content;
 					}
-					
-					include 'includes/cta-button-inline.php'; ?>
+					if ( $textcolor == 'light' ) {
+						include 'includes/cta-button-inline-light.php';
+					} else {
+						include 'includes/cta-button-inline.php';
+					} ?>
 				</div>
 			</div>
 			
@@ -199,8 +214,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 				if ( $content ) {
 					echo $content;
 				}
-					
-				include 'includes/cta-button-inline.php'; ?>
+				if ( $textcolor == 'light' ) {
+					include 'includes/cta-button-inline-light.php';
+				} else {
+					include 'includes/cta-button-inline.php';
+				} ?>
 			</div>
 			<?php endif;
 			
@@ -219,8 +237,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					if ( $content ) {
 						echo $content;
 					}
-					
-					include 'includes/cta-button-stacked.php'; ?>
+					if ( $textcolor == 'light' ) {
+						include 'includes/cta-button-stacked-light.php';
+					} else {
+						include 'includes/cta-button-stacked.php';
+					} ?>
 				</div>
 			</div>
 			
@@ -236,8 +257,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 				if ( $content ) {
 					echo $content;
 				}
-					
-				include 'includes/cta-button-stacked.php'; ?>
+				if ( $textcolor == 'light' ) {
+					include 'includes/cta-button-stacked-light.php';
+				} else {
+					include 'includes/cta-button-stacked.php';
+				} ?>
 			</div>
 			<?php endif;
 			
@@ -303,8 +327,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					if ( $content ) {
 						echo $content;
 					}
-					
-					include 'includes/cta-button-inline.php'; ?>
+					if ( $textcolor == 'light' ) {
+						include 'includes/cta-button-inline-light.php';
+					} else {
+						include 'includes/cta-button-inline.php';
+					} ?>
 				</div>
 			</div>
 			
@@ -320,8 +347,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 				if ( $content ) {
 					echo $content;
 				}
-					
-				include 'includes/cta-button-inline.php'; ?>
+				if ( $textcolor == 'light' ) {
+					include 'includes/cta-button-inline-light.php';
+				} else {
+					include 'includes/cta-button-inline.php';
+				} ?>
 			</div>
 			<?php endif;
 			
@@ -340,8 +370,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 					if ( $content ) {
 						echo $content;
 					}
-					
-					include 'includes/cta-button-stacked.php'; ?>
+					if ( $textcolor == 'light' ) {
+						include 'includes/cta-button-stacked-light.php';
+					} else {
+						include 'includes/cta-button-stacked.php';
+					} ?>
 				</div>
 			</div>
 			
@@ -357,8 +390,11 @@ if ( $blockanchor && $bgcolor == 'lightblue' && $textcolor == 'light' ): ?>
 				if ( $content ) {
 					echo $content;
 				}
-					
-				include 'includes/cta-button-stacked.php'; ?>
+				if ( $textcolor == 'light' ) {
+					include 'includes/cta-button-stacked-light.php';
+				} else {
+					include 'includes/cta-button-stacked.php';
+				} ?>
 			</div>
 			<?php endif;
 			
