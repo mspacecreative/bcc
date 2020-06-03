@@ -1,6 +1,6 @@
 			<footer id="contact" class="section">
 				<div class="inner no-top-bottom-padding light">
-					<div class="row gutter-space-1">
+					<div class="row gutter-space-2">
 						<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 mobile-margin-bottom-25 col">
 							<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-area-left')) ?>
 						</div>
