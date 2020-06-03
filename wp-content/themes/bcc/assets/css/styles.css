@@ -3554,6 +3554,14 @@ body {
 	color: #F58258;
 }
 
+.light.button:after, .inline-links-wrap > a.light:after {
+	background-image: url(../img/icons/arrow-right-white.svg);
+}
+
+.button.light {
+	color: #fff;
+}
+
 .section {
 	position: relative;
 }
