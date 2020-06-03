@@ -13,6 +13,7 @@ if ( isset( $submenu[ 'themes.php' ] ) ) {
 });
 
 function remove_menus(){
+	remove_menu_page( 'index.php' ); // Dashboard
 	remove_menu_page( 'tools.php' ); //Tools
 	//remove_menu_page( 'options-general.php' ); //Settings remove_menu_page( 'wpcf7' ); //contact form
 } 
