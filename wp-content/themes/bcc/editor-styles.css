@@ -2,3 +2,28 @@
 	border-bottom: 1px solid #333;
 	padding-bottom: 5px;
 }
+
+.pdf_dl:after {
+	content: '\f101';
+	font-family: fontAwesome;
+	margin-left: 5px;
+}
+
+.pdf_dl.light:after, .pdf_dl.light {
+	color: #fff;
+}
+
+.pdf_dl {
+	text-decoration: none;
+}
+.pdf_dl:before {
+	left: 0;
+	margin-right: 10px;
+	content: "\f1c1";
+	font-family: fontAwesome;
+	color: $darkgrey;
+	transition: 0.25s ease-in-out;
+}
+.pdf_dl.light:before {
+	color: $brandorange;
+}
