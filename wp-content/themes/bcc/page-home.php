@@ -11,7 +11,7 @@
 				
 				<div class="splash light-overlay">
 					<div class="splash-static-container">
-						<img data-object-fit="cover" src="<?php echo get_template_directory_uri(); ?>/assets/img/backgrounds/bcc-baby-splash.jpg" class="absolute_img">
+						<img data-object-fit="cover" src="<?php echo get_template_directory_uri(); ?>/assets/img/backgrounds/breastfeeding.jpg" class="absolute_img">
 					</div>
 					<!-- inner -->
 					<div class="inner txtaligncenter">
