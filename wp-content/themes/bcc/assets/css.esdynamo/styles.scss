@@ -389,8 +389,13 @@ form .wpcf7-submit {
 	margin-right: 15px;
 }
 
-.form_field input, .form_field select, .form_field textarea, form input {
+.form_field input, .form_field textarea, form input {
 	padding: 15px;
+	font-size: 14px;
+}
+
+.form_field select {
+	padding: 5px;
 	font-size: 14px;
 }
 
