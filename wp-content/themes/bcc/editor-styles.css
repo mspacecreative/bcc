@@ -27,3 +27,8 @@
 .mce-content-body a.pdf_dl.light:before {
 	color: $brandorange;
 }
+span.para-top-line-rule {
+	padding-top: 20px;
+    border-top: 1px solid #999;
+    display: block;
+}
