@@ -3469,15 +3469,15 @@ body {
 }
 
 .reports:before {
-	background-image: url(/assets/img/icons/reports.svg);
+	background-image: url(../../assets/img/icons/reports.svg);
 }
 
 .videos:before {
-	background-image: url(/assets/img/icons/videos.svg);
+	background-image: url(../../assets/img/icons/videos.svg);
 }
 
 .links:before {
-	background-image: url(/assets/img/icons/links.svg);
+	background-image: url(../../assets/img/icons/links.svg);
 }
 
 .gallery:before {

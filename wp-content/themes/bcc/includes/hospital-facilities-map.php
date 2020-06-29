@@ -267,6 +267,9 @@ function initMap( $el ) {
 
     // Center map based on markers.
     centerMap( map );
+	
+	// add marker cluster
+	markerCluster( map.markers, map )
 
     // Return map instance.
     return map;
@@ -300,7 +303,7 @@ function initMarker( $marker, map ) {
         position : latLng,
         map: map,
 		icon: {
-	      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+	      url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"
 	    }
     });
 
@@ -326,6 +329,11 @@ function initMarker( $marker, map ) {
 	        activeInfoWindow = infowindow;
 		});
     }
+}
+
+function markerCluster( markers, map ) {
+    var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    //console.log( markers );
 }
 
 /**
