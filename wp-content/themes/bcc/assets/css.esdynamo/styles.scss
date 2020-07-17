@@ -73,10 +73,6 @@ img {
 
 .col-container:nth-child(3n+1):nth-last-child(-n+3),
 .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container,
-.col-container:nth-child(3n+1):nth-last-child(-n+3),
-.col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container
-.col-container:nth-child(2n+1):nth-last-child(-n+2),
-.col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container,
 .col-container:nth-child(2n+1):nth-last-child(-n+2),
 .col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container {
 	padding-bottom: 0;
