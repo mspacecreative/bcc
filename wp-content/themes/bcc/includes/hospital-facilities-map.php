@@ -332,8 +332,9 @@ function initMarker( $marker, map ) {
 }
 
 function markerCluster( markers, map ) {
-    var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-    //console.log( markers );
+    var markerCluster = new MarkerClusterer(map, markers, {
+		imagePath: 'https://breastfeedingcanada.ca/wp-content/themes/bcc/includes/img/m',
+	});
 }
 
 /**
