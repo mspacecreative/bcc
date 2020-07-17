@@ -78,14 +78,14 @@ img {
 	padding-bottom: 0;
 }
 
-.resources .col-container:nth-child(3n+1):nth-last-child(-n+3),
-.resources .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container,
-.resources .col-container:nth-child(2n+1):nth-last-child(-n+2),
-.resources .col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container,
-.ressources .col-container:nth-child(3n+1):nth-last-child(-n+3),
-.ressources .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container,
-.ressources .col-container:nth-child(2n+1):nth-last-child(-n+2),
-.ressources .col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container {
+#relevant-links .col-container:nth-child(3n+1):nth-last-child(-n+3),
+#relevant-links .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container,
+#relevant-links .col-container:nth-child(2n+1):nth-last-child(-n+2),
+#relevant-links .col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container,
+#ressources-educatives .col-container:nth-child(3n+1):nth-last-child(-n+3),
+#ressources-educatives .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container,
+#ressources-educatives .col-container:nth-child(2n+1):nth-last-child(-n+2),
+#ressources-educatives .col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container {
 	padding-bottom: 3em;
 }
 
