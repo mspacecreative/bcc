@@ -2648,6 +2648,10 @@ img {
 	padding-bottom: 0;
 }
 
+.resources .col-container:nth-child(3n+1):nth-last-child(-n+3), .resources .col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container, .resources .col-container:nth-child(2n+1):nth-last-child(-n+2), .resources .col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container {
+	padding-bottom: 0;
+}
+
 .inline-links, .inline-links-wrap {
 	display: inline-block;
 	padding-right: 60px;
