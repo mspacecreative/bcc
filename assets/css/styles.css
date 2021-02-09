@@ -3022,7 +3022,7 @@ a, a:hover {
 	position: relative;
 	background-repeat: no-repeat;
 	display: flex;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .splash > .inner {
@@ -3069,18 +3069,7 @@ a, a:hover {
 	padding: 10px 15px;
 }
 
-/*.navbar:after {
-	position: absolute;
-	width: 15px;
-	height: 100%;
-	background: linear-gradient(90deg, rgba(0,0,0,.1), rgba(0,0,0,0) 80%);
-	content: "";
-	left: 250px;
-	top: 0;
-}*/
-
 .resources {
-	/*background-image: url(/assets/img/backgrounds/resources-gradient-bg.jpg);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -3090,6 +3079,10 @@ a, a:hover {
 .tagline {
 	position: relative;
 	margin: auto;
+	height: 100%;
+	padding-top: 200px;
+	display: flex;
+	align-items: center;
 }
 
 .maxWidth1080 {

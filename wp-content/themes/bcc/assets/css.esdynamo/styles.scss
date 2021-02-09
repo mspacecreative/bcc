@@ -4,6 +4,7 @@
 @import "slick-theme.css";
 @import "slick.css";
 @import "hamburgers.min.css";
+@import "_recaptcha.scss";
 
 $darkgrey: #666;
 $brandblue: #3F5BA9;
@@ -72,9 +73,7 @@ img {
 }
 
 .col-container:nth-child(3n+1):nth-last-child(-n+3),
-.col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container,
-.col-container:nth-child(2n+1):nth-last-child(-n+2),
-.col-container:nth-child(2n+1):nth-last-child(-n+2) ~ .col-container {
+.col-container:nth-child(3n+1):nth-last-child(-n+3) ~ .col-container {
 	padding-bottom: 0;
 }
 
@@ -701,6 +700,7 @@ a, a:hover {
 	top: 0;
 	width: 100%;
 	transition: 0.4s ease-in-out;
+	height: 100%;
 }
 
 .hide .splash-static-container {
@@ -734,7 +734,7 @@ a, a:hover {
 	position: relative;
 	background-repeat: no-repeat;
 	display: flex;
-	height: 100vh;
+	min-height: 100vh;
 }
 .splash > .inner {
 	display: flex;
@@ -796,6 +796,10 @@ a, a:hover {
 .tagline {
 	position: relative;
 	margin: auto;
+	height: 100%;
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
 }
 .maxWidth1080 {
 	max-width: 1080px;
@@ -1275,6 +1279,9 @@ video, iframe {
 	.form_field {
 		margin-bottom: 5%;
 	}
+	.tagline {
+		padding-top: 110px;
+	}
 	.placeholder-bg-img {
 		min-height: 200px;
 	}
@@ -1472,9 +1479,6 @@ video, iframe {
 }
 
 @media (max-width: 850px) and (orientation: landscape) {
-	.tagline {
-		padding: 50px 0;
-	}
 	.splash, .splash > .inner {
 		height: auto;
 	}
@@ -1678,6 +1682,9 @@ video, iframe {
 	}
 	.video-media h4 {
 		margin-bottom: 0;
+	}
+	.col-container {
+	    padding-bottom: 2rem;
 	}
 }
 
